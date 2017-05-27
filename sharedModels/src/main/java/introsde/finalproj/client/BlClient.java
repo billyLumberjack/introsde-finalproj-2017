@@ -1,5 +1,6 @@
 package introsde.finalproj.client;
 
+import javax.json.JsonObject;
 import javax.ws.rs.WebApplicationException;
 import introsde.finalproj.client.MyClient;
 import introsde.finalproj.model.User;
@@ -11,5 +12,17 @@ public class BlClient extends MyClient{
 		String url = ENDPOINT + "/user/health-data";
 		return finalMethod(url, HttpMethods.POST, u).getEntity(User.class);	
 	}
-
+	
+	public static JsonObject computeCaloriesCountFromDates(String id, int init, int end){
+		String url = ENDPOINT + "/user/"+id+"/calories-count";
+		return finalMethod(url, HttpMethods.GET).getEntity(JsonObject.class);	
+	}
+	
+	public static String recommendActivities(){
+		return null;
+	}
+	
+	public static String recommendFoods(){
+		return null;
+	}
 }

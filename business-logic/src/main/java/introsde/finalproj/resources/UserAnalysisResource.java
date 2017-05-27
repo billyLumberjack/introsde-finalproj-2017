@@ -26,7 +26,7 @@ public class UserAnalysisResource {
     @GET
     @Path("{userId}/calories-count")
     @Produces({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
-    public String method(@PathParam("userId") String id,
+    public String computeCaloriesCountFromDates(@PathParam("userId") String id,
     		@DefaultValue("-1") @QueryParam("from") int init,
     		@DefaultValue("-1") @QueryParam("to") int end
     		){
@@ -214,61 +214,6 @@ public class UserAnalysisResource {
     		return caloric_requirement - 750;
     	else
     		return caloric_requirement - 1000;
-    }
-    
-
-    
-    
-	/***************************************************************
-	 * 		POST REQUESTS
-	 ***************************************************************/    	
-	
-	@POST
-	@Produces({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
-	@Consumes({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
-	public User postUser(User u){
-		try{
-			System.out.println("--> Saving User");
-			return User.saveUser(u);
-		}finally{
-			System.out.println("--> Saved");
-		}
-
-	}
-	
-	/***************************************************************
-	 * 		PUT REQUESTS
-	 ***************************************************************/    	
-	
-    @PUT
-    @Path("{UserId}")
-    @Produces({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
-	@Consumes({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
-    public User putUser(@PathParam("UserId") String id, User User) {
-        System.out.println("--> Updating User... " +id);
-        return User.updateUser(User);
-    } 	
-
-	/***************************************************************
-	 * 		DELETE REQUESTS
-	 ***************************************************************/        
-    
-    @DELETE
-    @Path("{UserId}")
-    public Response deleteUser(@PathParam("UserId") String id) {
-    	System.out.println("--> Removing User... " +id);
-        User c = User.getOne(id);
-        if (c != null)
-        {
-        	//to return just the last measure for each type
-        	User.removeUser(c);
-            return null;
-        }
-        else
-        {
-            return Response.status(Response.Status.NOT_FOUND).build();
-        }
-        
     }   
 
 }
