@@ -1,0 +1,1996 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<exercises>
+	<exercise>
+		<exerciseName>Cycling, mountain bike, bmx</exerciseName>
+		<caloriesPerHour>8.513241992</caloriesPerHour>
+		<!-- calories per hour per kilo -->
+	</exercise>
+	<exercise>
+		<exerciseName>Cycling, &lt;10 mph, leisure bicycling</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cycling, &gt;20 mph, racing</exerciseName>
+		<caloriesPerHour>16.00896502</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cycling, 10-11.9 mph, light</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cycling, 12-13.9 mph, moderate</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cycling, 14-15.9 mph, vigorous</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cycling, 16-19 mph, very fast, racing</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Unicycling</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stationary cycling, very light</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stationary cycling, light</exerciseName>
+		<caloriesPerHour>5.51156105</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stationary cycling, moderate</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stationary cycling, vigorous</exerciseName>
+		<caloriesPerHour>10.51436262</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stationary cycling, very vigorous</exerciseName>
+		<caloriesPerHour>12.51548325</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Calisthenics,</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Calisthenics, light</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Circuit training, minimal rest</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Weight lifting, body building, vigorous</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Weight lifting, light workout</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Health club exercise</exerciseName>
+		<caloriesPerHour>5.51156105</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stair machine</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rowing machine, light</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rowing machine, moderate</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rowing machine, vigorous</exerciseName>
+		<caloriesPerHour>8.513241992</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rowing machine, very vigorous</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ski machine</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Aerobics, low impact</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Aerobics, high impact</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Aerobics, step aerobics</exerciseName>
+		<caloriesPerHour>8.513241992</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Aerobics, general</exerciseName>
+		<caloriesPerHour>6.512121364</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Jazzercise</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stretching, hatha yoga</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Mild stretching</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Instructing aerobic class</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Water aerobics</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ballet, twist, jazz, tap</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ballroom dancing, slow</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ballroom dancing, fast</exerciseName>
+		<caloriesPerHour>5.51156105</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 5 mph (12 minute mile)</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 5.2 mph (11.5 minute mile)</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 6 mph (10 min mile)</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 6.7 mph (9 min mile)</exerciseName>
+		<caloriesPerHour>11.00616345</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 7 mph (8.5 min mile)</exerciseName>
+		<caloriesPerHour>11.51492293</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 7.5mph (8 min mile)</exerciseName>
+		<caloriesPerHour>12.51548325</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 8 mph (7.5 min mile)</exerciseName>
+		<caloriesPerHour>13.51604356</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 8.6 mph (7 min mile)</exerciseName>
+		<caloriesPerHour>14.00784439</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 9 mph (6.5 min mile)</exerciseName>
+		<caloriesPerHour>15.00840471</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 10 mph (6 min mile)</exerciseName>
+		<caloriesPerHour>16.00896502</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 10.9 mph (5.5 min mile)</exerciseName>
+		<caloriesPerHour>18.01008565</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, cross country</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, general</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, on a track, team practice</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, stairs, up</exerciseName>
+		<caloriesPerHour>15.00840471</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Track and field (shot, discus)</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Track and field (high jump, pole vault)</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Track and field (hurdles)</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Archery</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Badminton</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Basketball game, competitive</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Playing basketball, non game</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Basketball, officiating</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Basketball, shooting baskets</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Basketball, wheelchair</exerciseName>
+		<caloriesPerHour>6.512121364</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, training, pushing wheelchair</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Billiards</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Bowling</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Boxing, in ring</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Boxing, punching bag</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Boxing, sparring</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Coaching:</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cricket (batting, bowling)</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Croquet</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Curling</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Darts (wall or lawn)</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Fencing</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Football, competitive</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Football, touch, flag, general</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Football or baseball, playing catch</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Frisbee playing, general</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Frisbee, ultimate frisbee</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Golf, general</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Golf, walking and carrying clubs</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Golf, driving range</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Golf, miniature golf</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Golf, walking and pulling clubs</exerciseName>
+		<caloriesPerHour>4.307496944</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Golf, using power cart</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Gymnastics</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Hacky sack</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Handball</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Handball, team</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Hockey, field hockey</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Hockey, ice hockey</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Riding a horse, general</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horesback riding, saddling horse</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horseback riding, grooming horse</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horseback riding, trotting</exerciseName>
+		<caloriesPerHour>6.512121364</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horseback riding, walking</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horse racing, galloping</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horse grooming, moderate</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horseshoe pitching</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Jai alai</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Martial arts, judo, karate, jujitsu</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Martial arts, kick boxing</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Martial arts, tae kwan do</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Krav maga training</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Juggling</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Kickball</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Lacrosse</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Orienteering</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Playing paddleball</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Paddleball, competitive</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Polo</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Racquetball, competitive</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Playing racquetball</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rock climbing, ascending rock</exerciseName>
+		<caloriesPerHour>11.00616345</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rock climbing, rappelling</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Jumping rope, fast</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Jumping rope, moderate</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Jumping rope, slow</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rugby</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Shuffleboard, lawn bowling</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Skateboarding</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Roller skating</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Roller blading, in-line skating</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Sky diving</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Soccer, competitive</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Playing soccer</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Softball or baseball</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Softball, officiating</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Softball, pitching</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Squash</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Table tennis, ping pong</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Tai chi</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Playing tennis</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Tennis, doubles</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Tennis, singles</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Trampoline</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Volleyball, competitive</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Playing volleyball</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Volleyball, beach</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Wrestling</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Wallyball</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Backpacking, Hiking with pack</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying infant, level ground</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying infant, upstairs</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying 16 to 24 lbs, upstairs</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying 25 to 49 lbs, upstairs</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Standing, playing with children, light</exerciseName>
+		<caloriesPerHour>2.798177149</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walk/run, playing with children, moderate</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walk/run, playing with children, vigorous</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying small children</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Loading, unloading car</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Climbing hills, carrying up to 9 lbs</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Climbing hills, carrying 10 to 20 lb</exerciseName>
+		<caloriesPerHour>7.512681678</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Climbing hills, carrying 21 to 42 lb</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Climbing hills, carrying over 42 lb</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking downstairs</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Hiking, cross country</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Bird watching</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Marching, rapidly, military</exerciseName>
+		<caloriesPerHour>6.512121364</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Children's games, hopscotch, dodgeball</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Pushing stroller or walking with children</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Pushing a wheelchair</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Race walking</exerciseName>
+		<caloriesPerHour>6.512121364</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rock climbing, mountain climbing</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking using crutches</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking the dog</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking, under 2.0 mph, very slow</exerciseName>
+		<caloriesPerHour>2.001120628</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 2.0 mph, slow</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 2.5 mph</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 3.0 mph, moderate</exerciseName>
+		<caloriesPerHour>3.30693663</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 3.5 mph, brisk pace</exerciseName>
+		<caloriesPerHour>3.798737462</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 3.5 mph, uphill</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 4.0 mph, very brisk</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 4.5 mph</exerciseName>
+		<caloriesPerHour>6.308617572</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 5.0 mph</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Boating, power, speed boat</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Canoeing, camping trip</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Canoeing, rowing, light</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Canoeing, rowing, moderate</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Canoeing, rowing, vigorous</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Crew, sculling, rowing, competition</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Kayaking</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Paddle boat</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Windsurfing, sailing</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Sailing, competition</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Sailing, yachting, ocean sailing</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Skiing, water skiing</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ski mobiling</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Skin diving, fast</exerciseName>
+		<caloriesPerHour>16.00896502</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Skin diving, moderate</exerciseName>
+		<caloriesPerHour>12.51548325</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Skin diving, scuba diving</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Snorkeling</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Surfing, body surfing or board surfing</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Whitewater rafting, kayaking, canoeing</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming laps, freestyle, fast</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming laps, freestyle, slow</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming backstroke</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming breaststroke</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming butterfly</exerciseName>
+		<caloriesPerHour>11.00616345</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming leisurely, not laps</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming sidestroke</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming synchronized</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming, treading water, fast, vigorous</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming, treading water, moderate</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Water aerobics, water calisthenics</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Water polo</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Water volleyball</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Water jogging</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Diving, springboard or platform</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ice skating, &lt; 9 mph</exerciseName>
+		<caloriesPerHour>5.51156105</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ice skating, average speed</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ice skating, rapidly</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Speed skating, ice, competitive</exerciseName>
+		<caloriesPerHour>15.00840471</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cross country snow skiing, slow</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cross country skiing, moderate</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cross country skiing, vigorous</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cross country skiing, racing</exerciseName>
+		<caloriesPerHour>14.00784439</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cross country skiing, uphill</exerciseName>
+		<caloriesPerHour>16.5177245</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Snow skiing, downhill skiing, light</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Downhill snow skiing, moderate</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Downhill snow skiing, racing</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Sledding, tobagganing, luge</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Snow shoeing</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Snowmobiling</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>General housework</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cleaning gutters</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Painting</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Sit, playing with animals</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walk / run, playing with animals</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Bathing dog</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Mowing lawn, walk, power mower</exerciseName>
+		<caloriesPerHour>5.51156105</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Mowing lawn, riding mower</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking, snow blower</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Riding, snow blower</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Shoveling snow by hand</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Raking lawn</exerciseName>
+		<caloriesPerHour>4.307496944</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Gardening, general</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Bagging grass, leaves</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Watering lawn or garden</exerciseName>
+		<caloriesPerHour>1.509319795</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Weeding, cultivating garden</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carpentry, general</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying heavy loads</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying moderate loads upstairs</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>General cleaning</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cleaning, dusting</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Taking out trash</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking, pushing a wheelchair</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Teach physical education,exercise class</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Teach exercise classes</exerciseName>
+		<caloriesPerHour>6.512121364</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cycling, mountain bike, bmx</exerciseName>
+		<caloriesPerHour>8.513241992</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cycling, &lt;10 mph, leisure bicycling</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cycling, &gt;20 mph, racing</exerciseName>
+		<caloriesPerHour>16.00896502</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cycling, 10-11.9 mph, light</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cycling, 12-13.9 mph, moderate</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cycling, 14-15.9 mph, vigorous</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cycling, 16-19 mph, very fast, racing</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Unicycling</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stationary cycling, very light</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stationary cycling, light</exerciseName>
+		<caloriesPerHour>5.51156105</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stationary cycling, moderate</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stationary cycling, vigorous</exerciseName>
+		<caloriesPerHour>10.51436262</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stationary cycling, very vigorous</exerciseName>
+		<caloriesPerHour>12.51548325</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Calisthenics,</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Calisthenics, light</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Circuit training, minimal rest</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Weight lifting, body building, vigorous</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Weight lifting, light workout</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Health club exercise</exerciseName>
+		<caloriesPerHour>5.51156105</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stair machine</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rowing machine, light</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rowing machine, moderate</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rowing machine, vigorous</exerciseName>
+		<caloriesPerHour>8.513241992</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rowing machine, very vigorous</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ski machine</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Aerobics, low impact</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Aerobics, high impact</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Aerobics, step aerobics</exerciseName>
+		<caloriesPerHour>8.513241992</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Aerobics, general</exerciseName>
+		<caloriesPerHour>6.512121364</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Jazzercise</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Stretching, hatha yoga</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Mild stretching</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Instructing aerobic class</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Water aerobics</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ballet, twist, jazz, tap</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ballroom dancing, slow</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ballroom dancing, fast</exerciseName>
+		<caloriesPerHour>5.51156105</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 5 mph (12 minute mile)</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 5.2 mph (11.5 minute mile)</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 6 mph (10 min mile)</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 6.7 mph (9 min mile)</exerciseName>
+		<caloriesPerHour>11.00616345</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 7 mph (8.5 min mile)</exerciseName>
+		<caloriesPerHour>11.51492293</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 7.5mph (8 min mile)</exerciseName>
+		<caloriesPerHour>12.51548325</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 8 mph (7.5 min mile)</exerciseName>
+		<caloriesPerHour>13.51604356</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 8.6 mph (7 min mile)</exerciseName>
+		<caloriesPerHour>14.00784439</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 9 mph (6.5 min mile)</exerciseName>
+		<caloriesPerHour>15.00840471</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 10 mph (6 min mile)</exerciseName>
+		<caloriesPerHour>16.00896502</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, 10.9 mph (5.5 min mile)</exerciseName>
+		<caloriesPerHour>18.01008565</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, cross country</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, general</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, on a track, team practice</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, stairs, up</exerciseName>
+		<caloriesPerHour>15.00840471</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Track and field (shot, discus)</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Track and field (high jump, pole vault)</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Track and field (hurdles)</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Archery</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Badminton</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Basketball game, competitive</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Playing basketball, non game</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Basketball, officiating</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Basketball, shooting baskets</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Basketball, wheelchair</exerciseName>
+		<caloriesPerHour>6.512121364</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Running, training, pushing wheelchair</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Billiards</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Bowling</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Boxing, in ring</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Boxing, punching bag</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Boxing, sparring</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Coaching:</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cricket (batting, bowling)</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Croquet</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Curling</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Darts (wall or lawn)</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Fencing</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Football, competitive</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Football, touch, flag, general</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Football or baseball, playing catch</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Frisbee playing, general</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Frisbee, ultimate frisbee</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Golf, general</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Golf, walking and carrying clubs</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Golf, driving range</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Golf, miniature golf</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Golf, walking and pulling clubs</exerciseName>
+		<caloriesPerHour>4.307496944</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Golf, using power cart</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Gymnastics</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Hacky sack</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Handball</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Handball, team</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Hockey, field hockey</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Hockey, ice hockey</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Riding a horse, general</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horesback riding, saddling horse</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horseback riding, grooming horse</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horseback riding, trotting</exerciseName>
+		<caloriesPerHour>6.512121364</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horseback riding, walking</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horse racing, galloping</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horse grooming, moderate</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Horseshoe pitching</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Jai alai</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Martial arts, judo, karate, jujitsu</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Martial arts, kick boxing</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Martial arts, tae kwan do</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Krav maga training</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Juggling</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Kickball</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Lacrosse</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Orienteering</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Playing paddleball</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Paddleball, competitive</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Polo</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Racquetball, competitive</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Playing racquetball</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rock climbing, ascending rock</exerciseName>
+		<caloriesPerHour>11.00616345</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rock climbing, rappelling</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Jumping rope, fast</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Jumping rope, moderate</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Jumping rope, slow</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rugby</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Shuffleboard, lawn bowling</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Skateboarding</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Roller skating</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Roller blading, in-line skating</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Sky diving</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Soccer, competitive</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Playing soccer</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Softball or baseball</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Softball, officiating</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Softball, pitching</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Squash</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Table tennis, ping pong</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Tai chi</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Playing tennis</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Tennis, doubles</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Tennis, singles</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Trampoline</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Volleyball, competitive</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Playing volleyball</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Volleyball, beach</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Wrestling</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Wallyball</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Backpacking, Hiking with pack</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying infant, level ground</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying infant, upstairs</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying 16 to 24 lbs, upstairs</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying 25 to 49 lbs, upstairs</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Standing, playing with children, light</exerciseName>
+		<caloriesPerHour>2.798177149</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walk/run, playing with children, moderate</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walk/run, playing with children, vigorous</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying small children</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Loading, unloading car</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Climbing hills, carrying up to 9 lbs</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Climbing hills, carrying 10 to 20 lb</exerciseName>
+		<caloriesPerHour>7.512681678</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Climbing hills, carrying 21 to 42 lb</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Climbing hills, carrying over 42 lb</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking downstairs</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Hiking, cross country</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Bird watching</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Marching, rapidly, military</exerciseName>
+		<caloriesPerHour>6.512121364</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Children's games, hopscotch, dodgeball</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Pushing stroller or walking with children</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Pushing a wheelchair</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Race walking</exerciseName>
+		<caloriesPerHour>6.512121364</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Rock climbing, mountain climbing</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking using crutches</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking the dog</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking, under 2.0 mph, very slow</exerciseName>
+		<caloriesPerHour>2.001120628</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 2.0 mph, slow</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 2.5 mph</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 3.0 mph, moderate</exerciseName>
+		<caloriesPerHour>3.30693663</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 3.5 mph, brisk pace</exerciseName>
+		<caloriesPerHour>3.798737462</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 3.5 mph, uphill</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 4.0 mph, very brisk</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 4.5 mph</exerciseName>
+		<caloriesPerHour>6.308617572</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking 5.0 mph</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Boating, power, speed boat</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Canoeing, camping trip</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Canoeing, rowing, light</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Canoeing, rowing, moderate</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Canoeing, rowing, vigorous</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Crew, sculling, rowing, competition</exerciseName>
+		<caloriesPerHour>12.00672377</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Kayaking</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Paddle boat</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Windsurfing, sailing</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Sailing, competition</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Sailing, yachting, ocean sailing</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Skiing, water skiing</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ski mobiling</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Skin diving, fast</exerciseName>
+		<caloriesPerHour>16.00896502</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Skin diving, moderate</exerciseName>
+		<caloriesPerHour>12.51548325</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Skin diving, scuba diving</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Snorkeling</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Surfing, body surfing or board surfing</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Whitewater rafting, kayaking, canoeing</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming laps, freestyle, fast</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming laps, freestyle, slow</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming backstroke</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming breaststroke</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming butterfly</exerciseName>
+		<caloriesPerHour>11.00616345</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming leisurely, not laps</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming sidestroke</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming synchronized</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming, treading water, fast, vigorous</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Swimming, treading water, moderate</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Water aerobics, water calisthenics</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Water polo</exerciseName>
+		<caloriesPerHour>10.00560314</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Water volleyball</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Water jogging</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Diving, springboard or platform</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ice skating, &lt; 9 mph</exerciseName>
+		<caloriesPerHour>5.51156105</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ice skating, average speed</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Ice skating, rapidly</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Speed skating, ice, competitive</exerciseName>
+		<caloriesPerHour>15.00840471</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cross country snow skiing, slow</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cross country skiing, moderate</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cross country skiing, vigorous</exerciseName>
+		<caloriesPerHour>9.005042824</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cross country skiing, racing</exerciseName>
+		<caloriesPerHour>14.00784439</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cross country skiing, uphill</exerciseName>
+		<caloriesPerHour>16.5177245</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Snow skiing, downhill skiing, light</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Downhill snow skiing, moderate</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Downhill snow skiing, racing</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Sledding, tobagganing, luge</exerciseName>
+		<caloriesPerHour>7.003922196</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Snow shoeing</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Snowmobiling</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>General housework</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cleaning gutters</exerciseName>
+		<caloriesPerHour>5.002801569</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Painting</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Sit, playing with animals</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walk / run, playing with animals</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Bathing dog</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Mowing lawn, walk, power mower</exerciseName>
+		<caloriesPerHour>5.51156105</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Mowing lawn, riding mower</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking, snow blower</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Riding, snow blower</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Shoveling snow by hand</exerciseName>
+		<caloriesPerHour>6.003361883</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Raking lawn</exerciseName>
+		<caloriesPerHour>4.307496944</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Gardening, general</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Bagging grass, leaves</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Watering lawn or garden</exerciseName>
+		<caloriesPerHour>1.509319795</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Weeding, cultivating garden</exerciseName>
+		<caloriesPerHour>4.511000737</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carpentry, general</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying heavy loads</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Carrying moderate loads upstairs</exerciseName>
+		<caloriesPerHour>8.00448251</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>General cleaning</exerciseName>
+		<caloriesPerHour>3.510440423</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Cleaning, dusting</exerciseName>
+		<caloriesPerHour>2.509880109</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Taking out trash</exerciseName>
+		<caloriesPerHour>3.001680941</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Walking, pushing a wheelchair</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Teach physical education,exercise class</exerciseName>
+		<caloriesPerHour>4.002241255</caloriesPerHour>
+	</exercise>
+	<exercise>
+		<exerciseName>Teach exercise classes</exerciseName>
+		<caloriesPerHour>6.512121364</caloriesPerHour>
+	</exercise>
+</exercises>
