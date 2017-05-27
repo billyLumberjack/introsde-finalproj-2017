@@ -17,7 +17,7 @@ public class BlClient extends MyClient{
 		String url = ENDPOINT + "/user/"+id+"/calories-count";
 		return finalMethod(url, HttpMethods.GET).getEntity(JsonObject.class);	
 	}
-	
+	//ciccio
 	public static String recommendActivities(){
 		return null;
 	}
