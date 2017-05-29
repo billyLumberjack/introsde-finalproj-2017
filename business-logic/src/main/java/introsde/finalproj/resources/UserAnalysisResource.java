@@ -51,15 +51,16 @@ public class UserAnalysisResource {
 	    			spese += Integer.parseInt(a.getDetails().get("calories"));
 	    	}
 
-	    	JsonObjectBuilder o = Json.createObjectBuilder();
-	    	o.add("spent", spese)
-	    		.add("introduced", introdotte)
-	    		.add("difference", introdotte - spese);
+	    	JsonObject o = Json.createObjectBuilder()
+	    			.add("spent", spese)
+	    			.add("introduced", introdotte)
+	    			.add("difference", introdotte - spese)
+	    			.build();
 	    	
 	    	
 	                	    	
 	    	
-	    	return o.build().toString();
+	    	return o.toString();
     	}
     	else
     		return null;

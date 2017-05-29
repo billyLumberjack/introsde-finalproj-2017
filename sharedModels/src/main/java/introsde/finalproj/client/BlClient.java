@@ -13,9 +13,9 @@ public class BlClient extends MyClient{
 		return finalMethod(url, HttpMethods.POST, u).getEntity(User.class);	
 	}
 	
-	public static JsonObject computeCaloriesCountFromDates(String id, int init, int end){
+	public static String computeCaloriesCountFromDates(String id, int init, int end){
 		String url = ENDPOINT + "/user/"+id+"/calories-count";
-		return finalMethod(url, HttpMethods.GET).getEntity(JsonObject.class);	
+		return finalMethod(url, HttpMethods.GET).getEntity(String.class);	
 	}
 	//ciccio
 	public static String recommendActivities(){

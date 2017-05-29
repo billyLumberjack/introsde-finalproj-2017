@@ -10,6 +10,7 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
+import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
@@ -144,5 +145,55 @@ public class UserResource {
 		}
 
 	}   
+	
+	//////////////////////////
+	
+	@GET
+	@Path("{userId}/calories-count")
+	@Produces({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
+	public Response computeCaloriesCountFromDates(@PathParam("userId") String id,
+			@DefaultValue("-1") @QueryParam("from") int init,
+			@DefaultValue("-1") @QueryParam("to") int end
+			){
+		try{
+
+			String data = BlClient.computeCaloriesCountFromDates(id, init, end);
+			
+			System.out.println(data);
+			
+			return Response.status(Response.Status.OK).entity(data).build();
+		}
+		catch(WebApplicationException e){
+			return Response.status(Response.Status.NOT_FOUND).build();    		
+		}     	
+	}   
+
+	@POST
+	@Path("health-data")
+	@Produces({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
+	@Consumes({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
+	public Response computeUserHealthData(User user){
+		try{
+
+			user = BlClient.computeHealthData(user);
+			return Response.status(Response.Status.OK).entity(user).build();
+		}
+		catch(WebApplicationException e){
+			return Response.status(Response.Status.NOT_FOUND).build();    		
+		}  
+	}    
+
+	@Produces({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
+	@Consumes({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
+	public void recommendActivities(){
+		// look for similar users and suggest their activities
+	}
+
+	@Produces({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
+	@Consumes({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
+	public void recommendFoods(){
+		// look for similar users and suggest their food
+	}	
+	
 
 }
