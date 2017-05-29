@@ -1,5 +1,8 @@
 package introsde.finalproj.resources;
 
+import javax.json.Json;
+import javax.json.JsonObject;
+import javax.json.JsonObjectBuilder;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.DefaultValue;
@@ -25,16 +28,16 @@ public class UserAnalysisResource {
 
     @GET
     @Path("{userId}/calories-count")
-    @Produces({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
+    @Produces({MediaType.APPLICATION_JSON })
     public String computeCaloriesCountFromDates(@PathParam("userId") String id,
     		@DefaultValue("-1") @QueryParam("from") int init,
     		@DefaultValue("-1") @QueryParam("to") int end
     		){
     	int introdotte = 0, spese = 0;
     	// retrieve the food history from to
-    	FoodHistory fh = SsClient.retrieveFoodHistoryByIntervalAndUserId(id, init, end);
+    	FoodHistory fh = SsClient.getFoodHistoryFromIntervalAndUserId(init, end, id);
     	// retrieve the activity history from to
-    	ActivityHistory ah = SsClient.retrieveActivityHistoryByIntervalAndUserId(id, init, end);
+    	ActivityHistory ah = SsClient.getActivityHistoryFromIntervalAndUserId(init, end, id);
     	// retrieve the baseline consumption
     	spese += SsClient.getHealthDataByUserId(id).getBmr();
     	// compute the sum and return
@@ -47,7 +50,16 @@ public class UserAnalysisResource {
 	    		for(Activity a: da.getActivity())
 	    			spese += Integer.parseInt(a.getDetails().get("calories"));
 	    	}
-	    	return "{\"spese\":"+spese+", \"introdotte\":"+introdotte+", \"differenza\":"+(introdotte - spese)+"}";
+
+	    	JsonObjectBuilder o = Json.createObjectBuilder();
+	    	o.add("spent", spese)
+	    		.add("introduced", introdotte)
+	    		.add("difference", introdotte - spese);
+	    	
+	    	
+	                	    	
+	    	
+	    	return o.build().toString();
     	}
     	else
     		return null;

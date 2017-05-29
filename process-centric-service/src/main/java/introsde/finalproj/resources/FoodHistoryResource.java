@@ -16,7 +16,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-
+import introsde.finalproj.client.SsClient;
 import introsde.finalproj.model.DailyActivity;
 import introsde.finalproj.model.DailyFood;
 import introsde.finalproj.model.Exercises;
@@ -39,7 +39,7 @@ public class FoodHistoryResource {
 			@PathParam("historyId") String id){
 		try{
 
-			FoodHistory data = DlClient.getFoodHistoryFromInterval(init, end, id);
+			FoodHistory data = SsClient.getFoodHistoryFromInterval(init, end, id);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){
@@ -56,7 +56,7 @@ public class FoodHistoryResource {
 			@PathParam("userId") String id){
 		try{
 
-			FoodHistory data = DlClient.getFoodHistoryFromIntervalAndUserId(init, end, id);
+			FoodHistory data = SsClient.getFoodHistoryFromIntervalAndUserId(init, end, id);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){
@@ -74,7 +74,7 @@ public class FoodHistoryResource {
 	public Response postFoodHistory(FoodHistory fh){
 		try{
 
-			FoodHistory data = DlClient.postFoodHistory(fh);
+			FoodHistory data = SsClient.postFoodHistory(fh);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){
@@ -94,7 +94,7 @@ public class FoodHistoryResource {
 	public Response putFoodHistory(@PathParam("historyId") String id, FoodHistory payload) {
 		try{
 
-			FoodHistory data = DlClient.putFoodHistory(id, payload);
+			FoodHistory data = SsClient.putFoodHistory(id, payload);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){
@@ -112,7 +112,7 @@ public class FoodHistoryResource {
 	public Response deleteFoodHistory(@PathParam("historyId") String id) {
 		try{
 
-			DlClient.deleteFoodHistory(id);
+			SsClient.deleteFoodHistory(id);
 			return Response.status(Response.Status.OK).build();
 		}
 		catch(WebApplicationException e){

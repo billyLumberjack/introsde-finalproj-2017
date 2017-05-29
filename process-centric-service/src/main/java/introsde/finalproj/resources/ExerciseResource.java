@@ -12,6 +12,7 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+import introsde.finalproj.client.SsClient;
 import introsde.finalproj.model.ActivityHistory;
 import introsde.finalproj.model.Exercises;
 
@@ -28,7 +29,7 @@ public class ExerciseResource {
 	public Response getExercises() {
 		try{
 
-			Exercises data = null;
+			Exercises data = SsClient.getExercises();
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){

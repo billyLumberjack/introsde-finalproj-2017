@@ -10,7 +10,6 @@ import javax.ws.rs.core.Response;
 
 import introsde.finalproj.client.MyClient;
 import introsde.finalproj.client.MyClient.HttpMethods;
-import introsde.finalproj.faea_client.FaeaClient;
 import introsde.finalproj.model.*;
 
 public class SsClient extends MyClient{
