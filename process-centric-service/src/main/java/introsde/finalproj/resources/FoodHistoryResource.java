@@ -16,8 +16,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriInfo;
 
-import introsde.finalproj.client.DlClient;
-import introsde.finalproj.faea_client.FaeaClient;
+
 import introsde.finalproj.model.DailyActivity;
 import introsde.finalproj.model.DailyFood;
 import introsde.finalproj.model.Exercises;

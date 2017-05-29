@@ -106,7 +106,7 @@ public class UserResource {
 	public Response postUser(User u){
 		try{
 			System.out.println("--> Saving User");
-			u = BlClient.computeHealthData(u);
+			u = User.saveUser(u);
 			return Response.status(Response.Status.OK).entity(u).build();
 		}
 		catch(WebApplicationException e){

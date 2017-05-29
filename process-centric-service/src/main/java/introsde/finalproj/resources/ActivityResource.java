@@ -14,7 +14,7 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import introsde.finalproj.client.DlClient;
+import introsde.finalproj.client.SsClient;
 import introsde.finalproj.model.ActivityHistory;
 
 
@@ -35,7 +35,7 @@ public class ActivityResource {
 			@PathParam("historyId") String id){
 		try
 		{
-			ActivityHistory fh = DlClient.getActivityHistoryFromInterval(init, end, id);
+			ActivityHistory fh = SsClient.getActivityHistoryFromInterval(init, end, id);
 			return Response.status(Response.Status.OK).entity(fh).build();
 
 		}
@@ -54,7 +54,7 @@ public class ActivityResource {
 			@DefaultValue("-1") @QueryParam("to") int end,
 			@PathParam("userId") String id){
 
-		ActivityHistory fh = DlClient.getActivityHistoryFromIntervalAndUserId(init, end, id);
+		ActivityHistory fh = SsClient.getActivityHistoryFromIntervalAndUserId(init, end, id);
 
 		if (fh != null)
 			return Response.status(Response.Status.OK).entity(fh).build();
@@ -72,7 +72,7 @@ public class ActivityResource {
 	@Consumes({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
 	public Response postActivityHistory(ActivityHistory fh){
 
-		fh = DlClient.postActivityHistory(fh);
+		fh = SsClient.postActivityHistory(fh);
 
 		if (fh != null)
 			return Response.status(Response.Status.OK).entity(fh).build();
@@ -91,7 +91,7 @@ public class ActivityResource {
 	@Consumes({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
 	public Response putActivityHistory(@PathParam("historyId") String id, ActivityHistory fh) {
 
-		fh = DlClient.putActivityHistory(id, fh);
+		fh = SsClient.putActivityHistory(id, fh);
 
 		if (fh != null)
 			return Response.status(Response.Status.OK).entity(fh).build();
@@ -107,7 +107,7 @@ public class ActivityResource {
 	@Path("{historyId}")
 	public Response deleteActivityHistory(@PathParam("historyId") String id) {
 		try{
-			DlClient.deleteActivityHistory(id);
+			SsClient.deleteActivityHistory(id);
 			return Response.status(Response.Status.OK).build();
 		}
 		catch(WebApplicationException e){

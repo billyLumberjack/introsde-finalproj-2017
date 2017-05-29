@@ -2,10 +2,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>edu.introsdefinal</groupId>
-	<artifactId>storage-service</artifactId>
+	<artifactId>process-centric-service</artifactId>
 	<packaging>war</packaging>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>storage-service Maven Webapp</name>
+	<name>process-centric-service Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<dependencies>
 
@@ -104,7 +104,7 @@
 
 	</dependencies>
 	<build>
-		<finalName>storage-service</finalName>
+		<finalName>process-centric-service</finalName>
 
 
 		<plugins>
@@ -113,7 +113,7 @@
 				<artifactId>heroku-maven-plugin</artifactId>
 				<version>1.1.3</version>
 				<configuration>
-					<appName>storage-service</appName>
+					<appName>process-centric-service</appName>
 				</configuration>
 			</plugin>
 		</plugins>

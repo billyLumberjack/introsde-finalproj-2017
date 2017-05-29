@@ -11,10 +11,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
-import javax.xml.bind.JAXBContext;
-import javax.xml.bind.Unmarshaller;
 
-import introsde.finalproj.faea_client.FaeaClient;
 import introsde.finalproj.model.ActivityHistory;
 import introsde.finalproj.model.Exercises;
 
@@ -31,7 +28,7 @@ public class ExerciseResource {
 	public Response getExercises() {
 		try{
 
-			Exercises data = FaeaClient.getExercises();
+			Exercises data = null;
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){
