@@ -8,11 +8,12 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-
-import introsde.finalproj.faea_client.FaeaClient;
+import introsde.finalproj.client.FaeaClient;
 
 @Path("/food-info")
 public class FoodResource {
+	
+	private FaeaClient faeaClient = new FaeaClient();
 	
 	/***************************************************************
 	 * 		GET REQUESTS
@@ -23,7 +24,7 @@ public class FoodResource {
     public Response searchFood(@PathParam("string") String str) {
 		try{
 
-			String data = FaeaClient.searchFood(str);
+			String data = faeaClient.searchFood(str);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){
@@ -38,7 +39,7 @@ public class FoodResource {
     public Response getFoodInfo(@PathParam("foodId") String id) {
 		try{
 
-			String data = FaeaClient.getFoodInfo(id);
+			String data = faeaClient.getFoodInfo(id);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){

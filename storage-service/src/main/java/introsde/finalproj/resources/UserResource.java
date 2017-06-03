@@ -20,6 +20,9 @@ import introsde.finalproj.model.User;
 
 @Path("/user")
 public class UserResource {
+	
+	private DlClient dlClient = new DlClient();
+	private BlClient blClient = new BlClient();
 
 	/***************************************************************
 	 * 		GET REQUESTS
@@ -34,7 +37,7 @@ public class UserResource {
 			@DefaultValue("-1") @QueryParam("to") int end) {
 		try
 		{
-			User data = DlClient.getUserById(id, init, end);
+			User data = dlClient.getUserById(id, init, end);
 			return Response.status(Response.Status.OK).entity(data).build();
 
 		}
@@ -51,7 +54,7 @@ public class UserResource {
 	public Response getUserByIdWithoutDailyDetails(@PathParam("userId") String id) {
 		try
 		{
-			User data = DlClient.getUserByIdWithoutDailyDetails(id);
+			User data = dlClient.getUserByIdWithoutDailyDetails(id);
 			return Response.status(Response.Status.OK).entity(data).build();
 
 		}
@@ -68,7 +71,7 @@ public class UserResource {
 	public Response getHealthDataByUserId(@PathParam("userId") String id) {
 		try
 		{
-			HealthData data = DlClient.getHealthDataByUserId(id);
+			HealthData data = dlClient.getHealthDataByUserId(id);
 			return Response.status(Response.Status.OK).entity(data).build();
 
 		}
@@ -89,8 +92,8 @@ public class UserResource {
 	public Response postUser(User u){
 		try
 		{
-			u = BlClient.computeHealthData(u);
-			u = DlClient.postUser(u);
+			u = blClient.computeHealthData(u);
+			u = dlClient.postUser(u);
 			return Response.status(Response.Status.OK).entity(u).build();
 
 		}
@@ -113,7 +116,7 @@ public class UserResource {
 	public Response putUser(@PathParam("UserId") String id, User u) {
 		try
 		{
-			User data = DlClient.putUser(id, u);
+			User data = dlClient.putUser(id, u);
 			return Response.status(Response.Status.OK).entity(data).build();
 
 		}
@@ -133,7 +136,7 @@ public class UserResource {
 	public Response deleteUser(@PathParam("UserId") String id) {
 		try
 		{
-			DlClient.deleteUser(id);
+			dlClient.deleteUser(id);
 			return Response.status(Response.Status.OK).build();
 
 		}

@@ -14,12 +14,14 @@ import javax.ws.rs.core.Response;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 
-import introsde.finalproj.faea_client.FaeaClient;
+import introsde.finalproj.client.DlClient;
+import introsde.finalproj.client.FaeaClient;
 import introsde.finalproj.model.ActivityHistory;
 import introsde.finalproj.model.Exercises;
 
 @Path("/activity-info")
 public class ExerciseResource {
+	private FaeaClient faeaClient = new FaeaClient();
 
 	/***************************************************************
 	 * 		GET REQUESTS
@@ -31,7 +33,7 @@ public class ExerciseResource {
 	public Response getExercises() {
 		try{
 
-			Exercises data = FaeaClient.getExercises();
+			Exercises data = faeaClient.getExercises();
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){

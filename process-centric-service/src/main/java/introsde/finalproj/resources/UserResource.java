@@ -16,11 +16,14 @@ import javax.ws.rs.core.Response;
 
 import introsde.finalproj.client.BlClient;
 import introsde.finalproj.client.DlClient;
+import introsde.finalproj.client.SsClient;
 import introsde.finalproj.model.HealthData;
 import introsde.finalproj.model.User;
 
 @Path("/user")
 public class UserResource {
+	
+	private SsClient ssClient = new SsClient();
 
 	/***************************************************************
 	 * 		GET REQUESTS
