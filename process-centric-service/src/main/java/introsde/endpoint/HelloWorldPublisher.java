@@ -6,7 +6,7 @@ import java.net.URISyntaxException;
 
 import javax.xml.ws.Endpoint;
 
-import introsde.finalproj.ws.ExampleImplementation;
+import introsde.finalproj.ws.UserWsImpl;
 
 //Endpoint publisher
 public class HelloWorldPublisher{
@@ -27,6 +27,6 @@ public class HelloWorldPublisher{
         String endpointUrl = PROTOCOL+HOSTNAME+":"+PORT+BASE_URL;
         System.out.println("Starting Service...");
         System.out.println("--> Published. Check out "+endpointUrl+"?wsdl");
-        Endpoint.publish(endpointUrl, new ExampleImplementation());
+        Endpoint.publish(endpointUrl, new UserWsImpl());
     }
 }

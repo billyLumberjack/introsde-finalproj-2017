@@ -15,7 +15,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import introsde.finalproj.client.BlClient;
-import introsde.finalproj.client.DlClient;
 import introsde.finalproj.client.SsClient;
 import introsde.finalproj.model.HealthData;
 import introsde.finalproj.model.User;
@@ -24,6 +23,7 @@ import introsde.finalproj.model.User;
 public class UserResource {
 	
 	private SsClient ssClient = new SsClient();
+	private BlClient blClient = new BlClient();
 
 	/***************************************************************
 	 * 		GET REQUESTS
@@ -38,7 +38,7 @@ public class UserResource {
 			@DefaultValue("-1") @QueryParam("to") int end) {
 		try
 		{
-			User data = DlClient.getUserById(id, init, end);
+			User data = ssClient.getUserById(id, init, end);
 			return Response.status(Response.Status.OK).entity(data).build();
 
 		}
@@ -55,7 +55,7 @@ public class UserResource {
 	public Response getUserByIdWithoutDailyDetails(@PathParam("userId") String id) {
 		try
 		{
-			User data = DlClient.getUserByIdWithoutDailyDetails(id);
+			User data = ssClient.getUserByIdWithoutDailyDetails(id);
 			return Response.status(Response.Status.OK).entity(data).build();
 
 		}
@@ -72,7 +72,7 @@ public class UserResource {
 	public Response getHealthDataByUserId(@PathParam("userId") String id) {
 		try
 		{
-			HealthData data = DlClient.getHealthDataByUserId(id);
+			HealthData data = ssClient.getHealthDataByUserId(id);
 			return Response.status(Response.Status.OK).entity(data).build();
 
 		}
@@ -93,8 +93,8 @@ public class UserResource {
 	public Response postUser(User u){
 		try
 		{
-			u = BlClient.computeHealthData(u);
-			u = DlClient.postUser(u);
+			u = blClient.computeHealthData(u);
+			u = ssClient.postUser(u);
 			return Response.status(Response.Status.OK).entity(u).build();
 
 		}
@@ -117,7 +117,7 @@ public class UserResource {
 	public Response putUser(@PathParam("UserId") String id, User u) {
 		try
 		{
-			User data = DlClient.putUser(id, u);
+			User data = ssClient.putUser(id, u);
 			return Response.status(Response.Status.OK).entity(data).build();
 
 		}
@@ -137,7 +137,7 @@ public class UserResource {
 	public Response deleteUser(@PathParam("UserId") String id) {
 		try
 		{
-			DlClient.deleteUser(id);
+			ssClient.deleteUser(id);
 			return Response.status(Response.Status.OK).build();
 
 		}
@@ -160,7 +160,7 @@ public class UserResource {
 			){
 		try{
 
-			String data = BlClient.computeCaloriesCountFromDates(id, init, end);
+			String data = blClient.computeCaloriesCountFromDates(id, init, end);
 			
 			System.out.println(data);
 			
@@ -178,7 +178,7 @@ public class UserResource {
 	public Response computeUserHealthData(User user){
 		try{
 
-			user = BlClient.computeHealthData(user);
+			user = blClient.computeHealthData(user);
 			return Response.status(Response.Status.OK).entity(user).build();
 		}
 		catch(WebApplicationException e){

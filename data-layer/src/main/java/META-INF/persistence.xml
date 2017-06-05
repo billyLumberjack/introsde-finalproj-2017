@@ -6,13 +6,13 @@
  <properties>       
             <property name="eclipselink.target-database" value="org.eclipse.persistence.nosql.adapters.mongo.MongoPlatform"/>
             <property name="eclipselink.nosql.connection-spec" value="org.eclipse.persistence.nosql.adapters.mongo.MongoConnectionSpec"/>
-      
+			<!--           
             <property name="eclipselink.nosql.property.mongo.host" value="52.29.135.219"/>
 			<property name="eclipselink.nosql.property.mongo.db" value="mydatabase"/>
-			<!--        
+ -->  
 			<property name="eclipselink.nosql.property.mongo.host" value="192.168.126.159"/>
 			<property name="eclipselink.nosql.property.mongo.db" value="mydb"/>
- -->
+ 
         </properties>
         
             

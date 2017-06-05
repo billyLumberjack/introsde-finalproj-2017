@@ -14,6 +14,8 @@ import introsde.finalproj.client.SsClient;
 @Path("/food-info")
 public class FoodResource {
 	
+	private SsClient ssClient = new SsClient(); 
+	
 	/***************************************************************
 	 * 		GET REQUESTS
 	 ***************************************************************/    	
@@ -23,7 +25,7 @@ public class FoodResource {
     public Response searchFood(@PathParam("string") String str) {
 		try{
 
-			String data = SsClient.searchFood(str);
+			String data = ssClient.searchFood(str);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){
@@ -38,7 +40,7 @@ public class FoodResource {
     public Response getFoodInfo(@PathParam("foodId") String id) {
 		try{
 
-			String data = SsClient.getFoodInfo(id);
+			String data = ssClient.getFoodInfo(id);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){

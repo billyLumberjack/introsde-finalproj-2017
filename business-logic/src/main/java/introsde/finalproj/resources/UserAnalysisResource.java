@@ -22,6 +22,8 @@ import introsde.finalproj.model.*;
 @Path("/user")
 public class UserAnalysisResource {
 	
+	private SsClient ssClient = new SsClient();
+	
 	/***************************************************************
 	 * 		GET REQUESTS
 	 ***************************************************************/    		
@@ -35,11 +37,11 @@ public class UserAnalysisResource {
     		){
     	int introdotte = 0, spese = 0;
     	// retrieve the food history from to
-    	FoodHistory fh = SsClient.getFoodHistoryFromIntervalAndUserId(init, end, id);
+    	FoodHistory fh = ssClient.getFoodHistoryFromIntervalAndUserId(init, end, id);
     	// retrieve the activity history from to
-    	ActivityHistory ah = SsClient.getActivityHistoryFromIntervalAndUserId(init, end, id);
+    	ActivityHistory ah = ssClient.getActivityHistoryFromIntervalAndUserId(init, end, id);
     	// retrieve the baseline consumption
-    	spese += SsClient.getHealthDataByUserId(id).getBmr();
+    	spese += ssClient.getHealthDataByUserId(id).getBmr();
     	// compute the sum and return
     	if(fh != null && ah != null){
 	    	for(DailyFood df : fh.getDailyFood()){

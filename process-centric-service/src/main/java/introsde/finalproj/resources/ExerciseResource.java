@@ -18,6 +18,8 @@ import introsde.finalproj.model.Exercises;
 
 @Path("/activity-info")
 public class ExerciseResource {
+	
+	private SsClient ssClient = new SsClient(); 
 
 	/***************************************************************
 	 * 		GET REQUESTS
@@ -29,7 +31,7 @@ public class ExerciseResource {
 	public Response getExercises() {
 		try{
 
-			Exercises data = SsClient.getExercises();
+			Exercises data = ssClient.getExercises();
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){

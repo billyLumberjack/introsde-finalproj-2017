@@ -45,7 +45,7 @@ public class BlClient extends MyClient{
 	}
 	
 	public  String computeCaloriesCountFromDates(String id, int init, int end){
-		String url = ENDPOINT + "/user/"+id+"/calories-count";
+		String url = ENDPOINT + "/user/"+id+"/calories-count?from="+init+"&to=" + end;
 		return finalMethod(url, HttpMethods.GET).getEntity(String.class);	
 	}
 	//ciccio

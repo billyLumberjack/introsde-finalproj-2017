@@ -3,7 +3,28 @@
   xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
   version="2.0">
   <endpoint
-      name="ExampleInterface"
-      implementation="introsde.finalproj.ws.ExampleImplementation"
-      url-pattern="/soap"/>
+      name="ActivityWsInterface"
+      implementation="introsde.finalproj.ws.ActivityWsImpl"
+      url-pattern="/soap/activity-history/"/>
+      
+  <endpoint
+      name="ExerciseWsInterface"
+      implementation="introsde.finalproj.ws.ExerciseWsImpl"
+      url-pattern="/soap/exercises/"/>
+      
+  <endpoint
+      name="FoodHistoryWsInterface"
+      implementation="introsde.finalproj.ws.FoodHistoryWsImpl"
+      url-pattern="/soap/food-history/"/>
+      
+  <endpoint
+      name="FoodWsInterface"
+      implementation="introsde.finalproj.ws.FoodWsImpl"
+      url-pattern="/soap/food"/>
+      
+  <endpoint
+      name="UserWsInterface"
+      implementation="introsde.finalproj.ws.UserWsImpl"
+      url-pattern="/soap/user"/>
+                              
 </endpoints>

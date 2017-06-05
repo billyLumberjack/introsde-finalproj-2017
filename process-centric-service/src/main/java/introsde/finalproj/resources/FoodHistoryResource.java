@@ -24,6 +24,8 @@ import introsde.finalproj.model.FoodHistory;
 
 @Path("/food-history")
 public class FoodHistoryResource {
+	
+	private SsClient ssClient = new SsClient(); 
 
 	/***************************************************************
 	 * 		GET REQUESTS
@@ -39,7 +41,7 @@ public class FoodHistoryResource {
 			@PathParam("historyId") String id){
 		try{
 
-			FoodHistory data = SsClient.getFoodHistoryFromInterval(init, end, id);
+			FoodHistory data = ssClient.getFoodHistoryFromInterval(init, end, id);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){
@@ -56,7 +58,7 @@ public class FoodHistoryResource {
 			@PathParam("userId") String id){
 		try{
 
-			FoodHistory data = SsClient.getFoodHistoryFromIntervalAndUserId(init, end, id);
+			FoodHistory data = ssClient.getFoodHistoryFromIntervalAndUserId(init, end, id);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){
@@ -74,7 +76,7 @@ public class FoodHistoryResource {
 	public Response postFoodHistory(FoodHistory fh){
 		try{
 
-			FoodHistory data = SsClient.postFoodHistory(fh);
+			FoodHistory data = ssClient.postFoodHistory(fh);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){
@@ -94,7 +96,7 @@ public class FoodHistoryResource {
 	public Response putFoodHistory(@PathParam("historyId") String id, FoodHistory payload) {
 		try{
 
-			FoodHistory data = SsClient.putFoodHistory(id, payload);
+			FoodHistory data = ssClient.putFoodHistory(id, payload);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){
@@ -112,7 +114,7 @@ public class FoodHistoryResource {
 	public Response deleteFoodHistory(@PathParam("historyId") String id) {
 		try{
 
-			SsClient.deleteFoodHistory(id);
+			ssClient.deleteFoodHistory(id);
 			return Response.status(Response.Status.OK).build();
 		}
 		catch(WebApplicationException e){
