@@ -9,6 +9,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import introsde.finalproj.client.FaeaClient;
+import introsde.finalproj.model.AdapterFoodDetails;
+import introsde.finalproj.model.AdapterFoods;
 
 @Path("/food-info")
 public class FoodResource {
@@ -20,11 +22,11 @@ public class FoodResource {
 	 ***************************************************************/    	
     @GET
     @Path("/search/{string}")
-    @Produces({MediaType.APPLICATION_JSON})
+    @Produces({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
     public Response searchFood(@PathParam("string") String str) {
 		try{
 
-			String data = faeaClient.searchFood(str);
+			AdapterFoods data = faeaClient.searchFood(str);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){
@@ -35,11 +37,11 @@ public class FoodResource {
     
     @GET
     @Path("{foodId}")
-    @Produces({MediaType.APPLICATION_JSON})
+    @Produces({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
     public Response getFoodInfo(@PathParam("foodId") String id) {
 		try{
 
-			String data = faeaClient.getFoodInfo(id);
+			AdapterFoodDetails data = faeaClient.getFoodInfo(id);
 			return Response.status(Response.Status.OK).entity(data).build();
 		}
 		catch(WebApplicationException e){

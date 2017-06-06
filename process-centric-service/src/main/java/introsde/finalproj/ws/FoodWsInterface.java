@@ -8,6 +8,8 @@ import javax.jws.soap.SOAPBinding.Style;
 import javax.jws.soap.SOAPBinding.Use;
 import javax.ws.rs.core.Response;
 
+import introsde.finalproj.model.AdapterFoodDetails;
+import introsde.finalproj.model.AdapterFoods;
 import introsde.finalproj.model.Food;
 import introsde.finalproj.model.HealthData;
 import introsde.finalproj.model.User;
@@ -16,7 +18,7 @@ import introsde.finalproj.model.User;
 @SOAPBinding(style = Style.DOCUMENT, use=Use.LITERAL) //optional
 public interface FoodWsInterface {
 	
-	public String searchFood(String str);
-	public String getFoodInfo(String str);
+	public AdapterFoods searchFood(String str);
+	public AdapterFoodDetails getFoodInfo(String str);
 
 }

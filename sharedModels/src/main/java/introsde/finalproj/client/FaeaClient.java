@@ -5,6 +5,8 @@ import java.io.InputStream;
 import java.util.Properties;
 
 import introsde.finalproj.client.MyClient;
+import introsde.finalproj.model.AdapterFoodDetails;
+import introsde.finalproj.model.AdapterFoods;
 import introsde.finalproj.model.Exercises;
 
 public class FaeaClient extends MyClient{
@@ -42,13 +44,13 @@ public class FaeaClient extends MyClient{
 		String url = ENDPOINT + "/activity-info";
 		return finalMethod(url, HttpMethods.GET).getEntity(Exercises.class);		
 	}
-	public String searchFood(String searchStr){
+	public AdapterFoods searchFood(String searchStr){
 		String url = ENDPOINT + "/food-info/search/"+searchStr;
-		return finalMethod(url, HttpMethods.GET).getEntity(String.class);		
+		return finalMethod(url, HttpMethods.GET).getEntity(AdapterFoods.class);		
 	}
-	public String getFoodInfo(String foodId){
+	public AdapterFoodDetails getFoodInfo(String foodId){
 		String url = ENDPOINT + "/food-info/"+foodId;
-		return finalMethod(url, HttpMethods.GET).getEntity(String.class);		
+		return finalMethod(url, HttpMethods.GET).getEntity(AdapterFoodDetails.class);		
 	}
 
 }

@@ -140,14 +140,14 @@ public class SsClient extends MyClient{
 		return finalMethod(url, HttpMethods.GET).getEntity(Exercises.class);		
 	}
 	
-    public  String searchFood(String query) {
+    public  AdapterFoods searchFood(String query) {
     	String url = ENDPOINT + "/food-info/search/" + query;
-		return finalMethod(url, HttpMethods.GET).getEntity(String.class); 
+		return finalMethod(url, HttpMethods.GET).getEntity(AdapterFoods.class); 
     }
     
-    public  String getFoodInfo(String id) {
-    	String url = ENDPOINT + "/food-info"+id;
-		return finalMethod(url, HttpMethods.GET).getEntity(String.class); 
+    public  AdapterFoodDetails getFoodInfo(String id) {
+    	String url = ENDPOINT + "/food-info/"+id;
+		return finalMethod(url, HttpMethods.GET).getEntity(AdapterFoodDetails.class); 
     }  
           
        

@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import javax.json.JsonObject;
 import javax.ws.rs.WebApplicationException;
 import introsde.finalproj.client.MyClient;
 import introsde.finalproj.model.User;

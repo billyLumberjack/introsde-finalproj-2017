@@ -19,6 +19,9 @@ import com.sun.jersey.api.client.Client;
 import com.sun.jersey.api.client.ClientResponse;
 import com.sun.jersey.api.client.WebResource;
 
+import introsde.finalproj.model.AdapterFood;
+import introsde.finalproj.model.AdapterFoodDetails;
+import introsde.finalproj.model.AdapterFoods;
 import introsde.finalproj.spoonacular_client.MyClient;
 
 @Path("/food-info")
@@ -29,10 +32,10 @@ public class FoodResource {
 	 ***************************************************************/    	
     @GET
     @Path("/search/{string}")
-    @Produces({MediaType.APPLICATION_JSON})
+    @Produces({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
     public Response searchFood(@PathParam("string") String str) {
     	System.out.println("--> Looking for " + str);
-    	String data = MyClient.searchFood(str); 
+    	AdapterFoods data = MyClient.searchFood(str); 
     	
     	if(data != null)
     		return Response.status(Response.Status.OK).entity(data).build();
@@ -43,10 +46,10 @@ public class FoodResource {
     
     @GET
     @Path("{foodId}")
-    @Produces({MediaType.APPLICATION_JSON})
+    @Produces({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
     public Response getFoodInfo(@PathParam("foodId") String id) {
     	System.out.println("--> Retrieving food with id " + id);
-    	String data = MyClient.getFoodInfo(id);
+    	AdapterFoodDetails data = MyClient.getFoodInfo(id);
     	
     	if(data != null)
     		return Response.status(Response.Status.OK).entity(data).build();

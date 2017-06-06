@@ -1,11 +1,14 @@
 package introsde.finalproj.ws;
 
+import javax.json.JsonObject;
 import javax.jws.WebService;
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.Response;
 
 import introsde.finalproj.client.BlClient;
 import introsde.finalproj.client.SsClient;
+import introsde.finalproj.model.AdapterFoodDetails;
+import introsde.finalproj.model.AdapterFoods;
 import introsde.finalproj.model.HealthData;
 import introsde.finalproj.model.User;
 
@@ -14,9 +17,8 @@ public class FoodWsImpl implements FoodWsInterface{
 	
 	private SsClient ssClient = new SsClient(); 
 
-	public String searchFood(String str) {
+	public AdapterFoods searchFood(String str) {
 		try{
-
 			return ssClient.searchFood(str);
 		}
 		catch(WebApplicationException e){
@@ -24,7 +26,7 @@ public class FoodWsImpl implements FoodWsInterface{
 		} 
 	}
 
-	public String getFoodInfo(String id) {
+	public AdapterFoodDetails getFoodInfo(String id) {
 		try{
 
 			return ssClient.getFoodInfo(id);
