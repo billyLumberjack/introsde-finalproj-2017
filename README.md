@@ -32,3 +32,11 @@ Handle the interaction with the lower noSql database using EclipseLink JPA imple
 
 * MongoDb Server
 Host the NoSql MongoDb Server
+
+## Documentation
+The documentation is in each project folder, docs/apidocs/index.html
+
+## Student
+Samuele Malavasi
+mat. 182551
+samuele.malavasi@studenti.unitn.it
