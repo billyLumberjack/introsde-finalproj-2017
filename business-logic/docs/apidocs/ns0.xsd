@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0"
+  
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="activity" type="activity"/>
+  <xs:element name="activityHistory" type="activityHistory"/>
+  <xs:element name="dailyActivity" type="dailyActivity"/>
+  <xs:element name="dailyFood" type="dailyFood"/>
+  <xs:element name="food" type="food"/>
+  <xs:element name="foodHistory" type="foodHistory"/>
+  <xs:element name="healthData" type="healthData"/>
+  <xs:element name="statistics" type="statistics"/>
+  <xs:element name="user" type="user"/>
+<xs:complexType name="activity">
+       <xs:sequence>
+              <xs:element name="details" minOccurs="0">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="entry" minOccurs="0" maxOccurs="unbounded">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="key" minOccurs="1" type="xs:string"/>
+            <xs:element name="value" minOccurs="1" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:sequence>
+  </xs:complexType>
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="activityHistory">
+       <xs:sequence>
+              <xs:element name="id" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="dailyActivity" type="dailyActivity" minOccurs="0" maxOccurs="unbounded">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dailyActivity">
+       <xs:sequence>
+              <xs:element name="activity" type="activity" minOccurs="0" maxOccurs="unbounded">
+              </xs:element>
+              <xs:element name="date" type="xs:int" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="dailyFood">
+       <xs:sequence>
+              <xs:element name="date" type="xs:int" minOccurs="1">
+              </xs:element>
+              <xs:element name="food" type="food" minOccurs="0" maxOccurs="unbounded">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="food">
+       <xs:sequence>
+              <xs:element name="name" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="quantity" type="xs:int" minOccurs="1">
+              </xs:element>
+              <xs:element name="unit" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="calories" type="xs:int" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="foodHistory">
+       <xs:sequence>
+              <xs:element name="dailyFood" type="dailyFood" minOccurs="0" maxOccurs="unbounded">
+              </xs:element>
+              <xs:element name="id" type="xs:string" minOccurs="0">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="healthData">
+       <xs:sequence>
+              <xs:element name="age" type="xs:int" minOccurs="1">
+              </xs:element>
+              <xs:element name="optimalWeight" type="xs:double" minOccurs="1">
+              </xs:element>
+              <xs:element name="sex" type="xs:boolean" minOccurs="1">
+              </xs:element>
+              <xs:element name="bmr" type="xs:double" minOccurs="1">
+              </xs:element>
+              <xs:element name="bmi" type="xs:double" minOccurs="1">
+              </xs:element>
+              <xs:element name="dailyKCaloriesGoal" type="xs:int" minOccurs="1">
+              </xs:element>
+              <xs:element name="physicalActivity" type="xs:boolean" minOccurs="1">
+              </xs:element>
+              <xs:element name="pal" type="pal" minOccurs="0">
+              </xs:element>
+              <xs:element name="height" type="xs:double" minOccurs="1">
+              </xs:element>
+              <xs:element name="weight" type="xs:double" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:simpleType name="pal">
+  <xs:restriction base="xs:string">
+     
+    <xs:enumeration value="LIGHT"/>
+ 
+    <xs:enumeration value="MODERATE"/>
+ 
+    <xs:enumeration value="HEAVY"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:complexType name="statistics">
+       <xs:sequence>
+              <xs:element name="introduced" type="xs:int" minOccurs="1">
+              </xs:element>
+              <xs:element name="spent" type="xs:int" minOccurs="1">
+              </xs:element>
+              <xs:element name="difference" type="xs:int" minOccurs="1">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="user">
+       <xs:sequence>
+              <xs:element name="healthData" type="healthData" minOccurs="0">
+              </xs:element>
+              <xs:element name="password" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="id" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="activityHistory" type="activityHistory" minOccurs="0">
+              </xs:element>
+              <xs:element name="username" type="xs:string" minOccurs="0">
+              </xs:element>
+              <xs:element name="foodHistory" type="foodHistory" minOccurs="0">
+              </xs:element>
+      </xs:sequence>
+</xs:complexType>
+
+</xs:schema>

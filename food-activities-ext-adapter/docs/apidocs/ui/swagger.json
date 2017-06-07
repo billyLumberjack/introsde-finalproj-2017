@@ -1,0 +1,227 @@
+{
+  "swagger": "2.0",
+  "info" : {
+    "description" : "<h1>food-activities-ext-adapter Maven Webapp<\/h1>",
+    "version" : "0.0.1-SNAPSHOT",
+    "title" : "food-activities-ext-adapter Maven Webapp"
+  },
+  "schemes" : [],
+  "tags" : [
+    {
+      "name" : "ExerciseResource"
+    }
+    ,
+    {
+      "name" : "FoodResource"
+    }
+    ,
+    {
+      "name" : "HelloWorld"
+    }
+  ],
+  "definitions" : {
+    "json_Exercise" : {
+      "type" : "object",
+      "title" : "Exercise",
+          "properties" : {
+            "exerciseName" : {
+"description" : "",
+"type" : "string"
+            },
+            "caloriesPerHour" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "example" : {
+  "exerciseName" : "...",
+  "caloriesPerHour" : 12345.0
+},
+      "description" : ""
+    }
+    ,
+    "json_Exercises" : {
+      "type" : "object",
+      "title" : "Exercises",
+          "properties" : {
+            "exercise" : {
+"description" : "",
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_Exercise"
+}
+            }
+          },
+      "example" : {
+  "exercise" : [ {
+    "exerciseName" : "...",
+    "caloriesPerHour" : 12345.0
+  }, {
+    "exerciseName" : "...",
+    "caloriesPerHour" : 12345.0
+  } ]
+},
+      "description" : ""
+    }
+    ,
+    "xml_ns0_exercise" : {
+      "type" : "object",
+      "title" : "exercise",
+      "allOf" : [
+        {
+          "properties" : {
+            "caloriesPerHour" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "number"
+            },
+            "exerciseName" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            }
+          }
+        }
+      ],
+      "description" : ""
+    }
+    ,
+    "xml_ns0_exercises" : {
+      "type" : "object",
+      "title" : "exercises",
+      "allOf" : [
+        {
+          "properties" : {
+            "exercise" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"$ref" : "#/definitions/xml_ns0_exercise"
+            }
+          }
+        }
+      ],
+      "description" : ""
+    }
+  },
+  "paths": {
+    "\/activity-info" : {
+      "get" : {
+        "tags" : [ "ExerciseResource" ],
+        "summary" : "GET REQUESTS.",
+        "description" : "GET REQUESTS",
+        "operationId" : "resource_ExerciseResource_getExercises_GET",
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_Exercises"
+            },
+            "examples" : {
+              "application/json" : {
+  "exercise" : [ {
+    "exerciseName" : "...",
+    "caloriesPerHour" : 12345.0
+  }, {
+    "exerciseName" : "...",
+    "caloriesPerHour" : 12345.0
+  } ]
+}
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/food-info/{foodId}" : {
+      "get" : {
+        "tags" : [ "FoodResource" ],
+        "description" : "",
+        "operationId" : "resource_FoodResource_getFoodInfo_GET",
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "foodId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/food-info/search/{string}" : {
+      "get" : {
+        "tags" : [ "FoodResource" ],
+        "summary" : "GET REQUESTS.",
+        "description" : "GET REQUESTS",
+        "operationId" : "resource_FoodResource_searchFood_GET",
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "string",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/hello-world" : {
+      "get" : {
+        "tags" : [ "HelloWorld" ],
+        "summary" : "GET REQUESTS.",
+        "description" : "GET REQUESTS",
+        "operationId" : "resource_HelloWorld_helloWorld_GET",
+        "produces" : [ "application/json" ],
+        "parameters" : [
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+  }
+}

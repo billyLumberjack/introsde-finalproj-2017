@@ -1,0 +1,1381 @@
+{
+  "swagger": "2.0",
+  "info" : {
+    "description" : "<h1>storage-service Maven Webapp<\/h1>",
+    "version" : "0.0.1-SNAPSHOT",
+    "title" : "storage-service Maven Webapp"
+  },
+  "schemes" : [],
+  "tags" : [
+    {
+      "name" : "ActivityResource"
+    }
+    ,
+    {
+      "name" : "ExerciseResource"
+    }
+    ,
+    {
+      "name" : "FoodHistoryResource"
+    }
+    ,
+    {
+      "name" : "FoodResource"
+    }
+    ,
+    {
+      "name" : "HelloWorld"
+    }
+    ,
+    {
+      "name" : "UserResource"
+    }
+  ],
+  "definitions" : {
+    "json_Activity" : {
+      "type" : "object",
+      "title" : "Activity",
+          "properties" : {
+            "details" : {
+"description" : "",
+"type" : "object",
+"additionalProperties" : {
+  "type" : "string"
+}
+            }
+          },
+      "example" : {
+  "details" : {
+    "property1" : "...",
+    "property2" : "..."
+  }
+},
+      "description" : ""
+    }
+    ,
+    "json_ActivityHistory" : {
+      "type" : "object",
+      "title" : "ActivityHistory",
+          "properties" : {
+            "id" : {
+"description" : "",
+"type" : "string"
+            },
+            "dailyActivity" : {
+"description" : "",
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_DailyActivity"
+}
+            }
+          },
+      "example" : {
+  "id" : "...",
+  "dailyActivity" : [ {
+    "activity" : [ {
+      "details" : {
+        "property1" : "...",
+        "property2" : "..."
+      }
+    }, {
+      "details" : {
+        "property1" : "...",
+        "property2" : "..."
+      }
+    } ],
+    "date" : 12345
+  }, {
+    "activity" : [ {
+      "details" : {
+        "property1" : "...",
+        "property2" : "..."
+      }
+    }, {
+      "details" : {
+        "property1" : "...",
+        "property2" : "..."
+      }
+    } ],
+    "date" : 12345
+  } ]
+},
+      "description" : ""
+    }
+    ,
+    "json_DailyActivity" : {
+      "type" : "object",
+      "title" : "DailyActivity",
+          "properties" : {
+            "activity" : {
+"description" : "",
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_Activity"
+}
+            },
+            "date" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "example" : {
+  "activity" : [ {
+    "details" : {
+      "property1" : "...",
+      "property2" : "..."
+    }
+  }, {
+    "details" : {
+      "property1" : "...",
+      "property2" : "..."
+    }
+  } ],
+  "date" : 12345
+},
+      "description" : ""
+    }
+    ,
+    "json_DailyFood" : {
+      "type" : "object",
+      "title" : "DailyFood",
+          "properties" : {
+            "food" : {
+"description" : "",
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_Food"
+}
+            },
+            "date" : {
+"description" : "",
+"type" : "number"
+            }
+          },
+      "example" : {
+  "food" : [ {
+    "calories" : 12345,
+    "quantity" : 12345,
+    "unit" : "...",
+    "name" : "..."
+  }, {
+    "calories" : 12345,
+    "quantity" : 12345,
+    "unit" : "...",
+    "name" : "..."
+  } ],
+  "date" : 12345
+},
+      "description" : ""
+    }
+    ,
+    "json_Food" : {
+      "type" : "object",
+      "title" : "Food",
+          "properties" : {
+            "calories" : {
+"description" : "",
+"type" : "number"
+            },
+            "quantity" : {
+"description" : "",
+"type" : "number"
+            },
+            "unit" : {
+"description" : "",
+"type" : "string"
+            },
+            "name" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "example" : {
+  "calories" : 12345,
+  "quantity" : 12345,
+  "unit" : "...",
+  "name" : "..."
+},
+      "description" : ""
+    }
+    ,
+    "json_FoodHistory" : {
+      "type" : "object",
+      "title" : "FoodHistory",
+          "properties" : {
+            "dailyFood" : {
+"description" : "",
+"type" : "array",
+"items" : {
+  "$ref" : "#/definitions/json_DailyFood"
+}
+            },
+            "id" : {
+"description" : "",
+"type" : "string"
+            }
+          },
+      "example" : {
+  "dailyFood" : [ {
+    "food" : [ {
+      "calories" : 12345,
+      "quantity" : 12345,
+      "unit" : "...",
+      "name" : "..."
+    }, {
+      "calories" : 12345,
+      "quantity" : 12345,
+      "unit" : "...",
+      "name" : "..."
+    } ],
+    "date" : 12345
+  }, {
+    "food" : [ {
+      "calories" : 12345,
+      "quantity" : 12345,
+      "unit" : "...",
+      "name" : "..."
+    }, {
+      "calories" : 12345,
+      "quantity" : 12345,
+      "unit" : "...",
+      "name" : "..."
+    } ],
+    "date" : 12345
+  } ],
+  "id" : "..."
+},
+      "description" : ""
+    }
+    ,
+    "json_HealthData" : {
+      "type" : "object",
+      "title" : "HealthData",
+          "properties" : {
+            "dailyKCaloriesGoal" : {
+"description" : "",
+"type" : "number"
+            },
+            "bmi" : {
+"description" : "",
+"type" : "number"
+            },
+            "pal" : {
+"description" : "",
+"$ref" : "#/definitions/json_Pal"
+            },
+            "weight" : {
+"description" : "",
+"type" : "number"
+            },
+            "height" : {
+"description" : "",
+"type" : "number"
+            },
+            "age" : {
+"description" : "",
+"type" : "number"
+            },
+            "bmr" : {
+"description" : "",
+"type" : "number"
+            },
+            "physicalActivity" : {
+"description" : "",
+"type" : "boolean"
+            },
+            "optimalWeight" : {
+"description" : "",
+"type" : "number"
+            },
+            "sex" : {
+"description" : "",
+"type" : "boolean"
+            }
+          },
+      "example" : {
+  "dailyKCaloriesGoal" : 12345,
+  "bmi" : 12345.0,
+  "pal" : "MODERATE",
+  "weight" : 12345.0,
+  "height" : 12345.0,
+  "age" : 12345,
+  "bmr" : 12345.0,
+  "physicalActivity" : true,
+  "optimalWeight" : 12345.0,
+  "sex" : true
+},
+      "description" : ""
+    }
+    ,
+    "json_Pal" : {
+      "type" : "string",
+      "title" : "Pal",
+          "enum" : [
+            "LIGHT",
+            "MODERATE",
+            "HEAVY"
+          ],
+      "description" : ""
+    }
+    ,
+    "json_User" : {
+      "type" : "object",
+      "title" : "User",
+          "properties" : {
+            "id" : {
+"description" : "",
+"type" : "string"
+            },
+            "activityHistory" : {
+"description" : "",
+"$ref" : "#/definitions/json_ActivityHistory"
+            },
+            "username" : {
+"description" : "",
+"type" : "string"
+            },
+            "foodHistory" : {
+"description" : "",
+"$ref" : "#/definitions/json_FoodHistory"
+            },
+            "password" : {
+"description" : "",
+"type" : "string"
+            },
+            "healthData" : {
+"description" : "",
+"$ref" : "#/definitions/json_HealthData"
+            }
+          },
+      "example" : {
+  "id" : "...",
+  "activityHistory" : {
+    "id" : "...",
+    "dailyActivity" : [ {
+      "activity" : [ { }, { } ],
+      "date" : 12345
+    }, {
+      "activity" : [ { }, { } ],
+      "date" : 12345
+    } ]
+  },
+  "username" : "...",
+  "foodHistory" : {
+    "dailyFood" : [ {
+      "food" : [ { }, { } ],
+      "date" : 12345
+    }, {
+      "food" : [ { }, { } ],
+      "date" : 12345
+    } ],
+    "id" : "..."
+  },
+  "password" : "...",
+  "healthData" : {
+    "dailyKCaloriesGoal" : 12345,
+    "bmi" : 12345.0,
+    "pal" : "MODERATE",
+    "weight" : 12345.0,
+    "height" : 12345.0,
+    "age" : 12345,
+    "bmr" : 12345.0,
+    "physicalActivity" : true,
+    "optimalWeight" : 12345.0,
+    "sex" : true
+  }
+},
+      "description" : ""
+    }
+    ,
+    "xml_ns0_activity" : {
+      "type" : "object",
+      "title" : "activity",
+      "allOf" : [
+        {
+          "properties" : {
+            "details" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "object"
+            }
+          }
+        }
+      ],
+      "description" : ""
+    }
+    ,
+    "xml_ns0_activityHistory" : {
+      "type" : "object",
+      "title" : "activityHistory",
+      "allOf" : [
+        {
+          "properties" : {
+            "dailyActivity" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"$ref" : "#/definitions/xml_ns0_dailyActivity"
+            },
+            "id" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            }
+          }
+        }
+      ],
+      "description" : ""
+    }
+    ,
+    "xml_ns0_dailyActivity" : {
+      "type" : "object",
+      "title" : "dailyActivity",
+      "allOf" : [
+        {
+          "properties" : {
+            "activity" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"$ref" : "#/definitions/xml_ns0_activity"
+            },
+            "date" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "number"
+            }
+          }
+        }
+      ],
+      "description" : ""
+    }
+    ,
+    "xml_ns0_dailyFood" : {
+      "type" : "object",
+      "title" : "dailyFood",
+      "allOf" : [
+        {
+          "properties" : {
+            "date" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "number"
+            },
+            "food" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"$ref" : "#/definitions/xml_ns0_food"
+            }
+          }
+        }
+      ],
+      "description" : ""
+    }
+    ,
+    "xml_ns0_food" : {
+      "type" : "object",
+      "title" : "food",
+      "allOf" : [
+        {
+          "properties" : {
+            "calories" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "number"
+            },
+            "name" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "quantity" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "number"
+            },
+            "unit" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            }
+          }
+        }
+      ],
+      "description" : ""
+    }
+    ,
+    "xml_ns0_foodHistory" : {
+      "type" : "object",
+      "title" : "foodHistory",
+      "allOf" : [
+        {
+          "properties" : {
+            "dailyFood" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"$ref" : "#/definitions/xml_ns0_dailyFood"
+            },
+            "id" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            }
+          }
+        }
+      ],
+      "description" : ""
+    }
+    ,
+    "xml_ns0_healthData" : {
+      "type" : "object",
+      "title" : "healthData",
+      "allOf" : [
+        {
+          "properties" : {
+            "age" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "number"
+            },
+            "bmi" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "number"
+            },
+            "bmr" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "number"
+            },
+            "dailyKCaloriesGoal" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "number"
+            },
+            "height" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "number"
+            },
+            "optimalWeight" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "number"
+            },
+            "pal" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"$ref" : "#/definitions/xml_ns0_pal"
+            },
+            "physicalActivity" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "boolean"
+            },
+            "sex" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "boolean"
+            },
+            "weight" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "number"
+            }
+          }
+        }
+      ],
+      "description" : ""
+    }
+    ,
+    "xml_ns0_pal" : {
+      "type" : "string",
+      "title" : "pal",
+          "enum" : [
+            "LIGHT",
+            "MODERATE",
+            "HEAVY"
+          ],
+      "description" : ""
+    }
+    ,
+    "xml_ns0_user" : {
+      "type" : "object",
+      "title" : "user",
+      "allOf" : [
+        {
+          "properties" : {
+            "activityHistory" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"$ref" : "#/definitions/xml_ns0_activityHistory"
+            },
+            "foodHistory" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"$ref" : "#/definitions/xml_ns0_foodHistory"
+            },
+            "healthData" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"$ref" : "#/definitions/xml_ns0_healthData"
+            },
+            "id" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "password" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            },
+            "username" : {
+              "xml" : {
+                "namespace" : ""
+              },
+"description" : "",
+"type" : "string"
+            }
+          }
+        }
+      ],
+      "description" : ""
+    }
+  },
+  "paths": {
+    "\/activity-history" : {
+      "post" : {
+        "tags" : [ "ActivityResource" ],
+        "summary" : "POST REQUESTS.",
+        "description" : "POST REQUESTS",
+        "operationId" : "resource_ActivityResource_postActivityHistory_POST",
+        "consumes" : [ "application/xml", "application/json", "text/xml" ],
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ActivityHistory"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/activity-history/{historyId}" : {
+      "delete" : {
+        "tags" : [ "ActivityResource" ],
+        "summary" : "DELETE REQUESTS.",
+        "description" : "DELETE REQUESTS",
+        "operationId" : "resource_ActivityResource_deleteActivityHistory_DELETE",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [
+          {
+            "name" : "historyId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "204" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+      ,
+      "get" : {
+        "tags" : [ "ActivityResource" ],
+        "summary" : "GET REQUESTS.",
+        "description" : "GET REQUESTS",
+        "operationId" : "resource_ActivityResource_getActivityHistoryFromInterval_GET",
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "historyId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "from",
+            "in" : "query",
+            "default" : "-1",
+            "type" : "integer",
+            "description" : ""
+          },
+          {
+            "name" : "to",
+            "in" : "query",
+            "default" : "-1",
+            "type" : "integer",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+      ,
+      "put" : {
+        "tags" : [ "ActivityResource" ],
+        "summary" : "PUT REQUESTS.",
+        "description" : "PUT REQUESTS",
+        "operationId" : "resource_ActivityResource_putActivityHistory_PUT",
+        "consumes" : [ "application/xml", "application/json", "text/xml" ],
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "historyId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_ActivityHistory"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "204" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/activity-history/by-user-id/{userId}" : {
+      "get" : {
+        "tags" : [ "ActivityResource" ],
+        "description" : "",
+        "operationId" : "resource_ActivityResource_getActivityHistoryFromIntervalAndUserId_GET",
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "userId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "from",
+            "in" : "query",
+            "default" : "-1",
+            "type" : "integer",
+            "description" : ""
+          },
+          {
+            "name" : "to",
+            "in" : "query",
+            "default" : "-1",
+            "type" : "integer",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/activity-info" : {
+      "get" : {
+        "tags" : [ "ExerciseResource" ],
+        "summary" : "GET REQUESTS.",
+        "description" : "GET REQUESTS",
+        "operationId" : "resource_ExerciseResource_getExercises_GET",
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/food-history" : {
+      "post" : {
+        "tags" : [ "FoodHistoryResource" ],
+        "summary" : "POST REQUESTS.",
+        "description" : "POST REQUESTS",
+        "operationId" : "resource_FoodHistoryResource_postFoodHistory_POST",
+        "consumes" : [ "application/xml", "application/json", "text/xml" ],
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_FoodHistory"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/food-history/{historyId}" : {
+      "delete" : {
+        "tags" : [ "FoodHistoryResource" ],
+        "summary" : "DELETE REQUESTS.",
+        "description" : "DELETE REQUESTS",
+        "operationId" : "resource_FoodHistoryResource_deleteFoodHistory_DELETE",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [
+          {
+            "name" : "historyId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "204" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+      ,
+      "get" : {
+        "tags" : [ "FoodHistoryResource" ],
+        "summary" : "GET REQUESTS.",
+        "description" : "GET REQUESTS",
+        "operationId" : "resource_FoodHistoryResource_getFoodHistoryFromInterval_GET",
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "historyId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "from",
+            "in" : "query",
+            "default" : "-1",
+            "type" : "integer",
+            "description" : ""
+          },
+          {
+            "name" : "to",
+            "in" : "query",
+            "default" : "-1",
+            "type" : "integer",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+      ,
+      "put" : {
+        "tags" : [ "FoodHistoryResource" ],
+        "summary" : "PUT REQUESTS.",
+        "description" : "PUT REQUESTS",
+        "operationId" : "resource_FoodHistoryResource_putFoodHistory_PUT",
+        "consumes" : [ "application/xml", "application/json", "text/xml" ],
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "historyId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_FoodHistory"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "204" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/food-history/by-user-id/{userId}" : {
+      "get" : {
+        "tags" : [ "FoodHistoryResource" ],
+        "description" : "",
+        "operationId" : "resource_FoodHistoryResource_getFoodHistoryFromIntervalAndUserId_GET",
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "userId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "from",
+            "in" : "query",
+            "default" : "-1",
+            "type" : "integer",
+            "description" : ""
+          },
+          {
+            "name" : "to",
+            "in" : "query",
+            "default" : "-1",
+            "type" : "integer",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/food-info/{foodId}" : {
+      "get" : {
+        "tags" : [ "FoodResource" ],
+        "description" : "",
+        "operationId" : "resource_FoodResource_getFoodInfo_GET",
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "foodId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/food-info/search/{string}" : {
+      "get" : {
+        "tags" : [ "FoodResource" ],
+        "summary" : "GET REQUESTS.",
+        "description" : "GET REQUESTS",
+        "operationId" : "resource_FoodResource_searchFood_GET",
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "string",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "" : {
+      "get" : {
+        "tags" : [ "HelloWorld" ],
+        "summary" : "GET REQUESTS.",
+        "description" : "GET REQUESTS",
+        "operationId" : "resource_HelloWorld_helloWorld_GET",
+        "produces" : [ "application/json" ],
+        "parameters" : [
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/user" : {
+      "post" : {
+        "tags" : [ "UserResource" ],
+        "summary" : "POST REQUESTS.",
+        "description" : "POST REQUESTS",
+        "operationId" : "resource_UserResource_postUser_POST",
+        "consumes" : [ "application/xml", "application/json", "text/xml" ],
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_User"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "201" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/user/{UserId}" : {
+      "delete" : {
+        "tags" : [ "UserResource" ],
+        "summary" : "DELETE REQUESTS.",
+        "description" : "DELETE REQUESTS",
+        "operationId" : "resource_UserResource_deleteUser_DELETE",
+        "produces" : [ "application/xml", "application/json" ],
+        "parameters" : [
+          {
+            "name" : "UserId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "204" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+      ,
+      "put" : {
+        "tags" : [ "UserResource" ],
+        "summary" : "PUT REQUESTS.",
+        "description" : "PUT REQUESTS",
+        "operationId" : "resource_UserResource_putUser_PUT",
+        "consumes" : [ "application/xml", "application/json", "text/xml" ],
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "UserId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "body",
+            "in" : "body",
+            "schema" : {
+"description" : "",
+"$ref" : "#/definitions/json_User"
+            },
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "204" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/user/{userId}" : {
+      "get" : {
+        "tags" : [ "UserResource" ],
+        "summary" : "GET REQUESTS.",
+        "description" : "GET REQUESTS",
+        "operationId" : "resource_UserResource_getUserById_GET",
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "userId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          },
+          {
+            "name" : "from",
+            "in" : "query",
+            "default" : "-1",
+            "type" : "integer",
+            "description" : ""
+          },
+          {
+            "name" : "to",
+            "in" : "query",
+            "default" : "-1",
+            "type" : "integer",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/user/light/{userId}" : {
+      "get" : {
+        "tags" : [ "UserResource" ],
+        "description" : "",
+        "operationId" : "resource_UserResource_getUserByIdWithoutDailyDetails_GET",
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "userId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+    ,
+    "\/user/{userId}/health-data" : {
+      "get" : {
+        "tags" : [ "UserResource" ],
+        "description" : "",
+        "operationId" : "resource_UserResource_getHealthDataByUserId_GET",
+        "produces" : [ "application/xml", "application/json", "text/xml" ],
+        "parameters" : [
+          {
+            "name" : "userId",
+            "in" : "path",
+            "required" : true,
+            "type" : "string",
+            "description" : ""
+          }
+        ],
+        "responses" : {
+          "200" : {
+            "schema" : {
+"description" : "",
+"type" : "file"
+            },
+            "examples" : {
+            },
+            "description" : ""
+          }
+        }
+      }
+    }
+  }
+}

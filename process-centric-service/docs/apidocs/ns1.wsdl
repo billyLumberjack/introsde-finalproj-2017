@@ -1,0 +1,661 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?enunciate-assumed-base-uri http://localhost:8080/?>
+<wsdl:definitions targetNamespace="http://ws.finalproj.introsde/"
+   xmlns:ns1="http://ws.finalproj.introsde/"
+   xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/"
+   xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+   xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/"
+   xmlns:xs="http://www.w3.org/2001/XMLSchema"
+   xmlns:http="http://schemas.xmlsoap.org/wsdl/http/"
+   xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/"
+   xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+   >
+
+  <wsdl:types>
+  <xs:schema targetNamespace="http://ws.finalproj.introsde/">
+      <xs:include schemaLocation="ns1.xsd"/>
+  </xs:schema>
+  </wsdl:types>
+
+  <wsdl:message name="ActivityWsInterface.getActivityHistoryFromInterval">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "getActivityHistoryFromInterval".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getActivityHistoryFromInterval">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ActivityWsInterface.getActivityHistoryFromIntervalResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "getActivityHistoryFromInterval".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getActivityHistoryFromIntervalResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ActivityWsInterface.getActivityHistoryFromIntervalAndUserId">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "getActivityHistoryFromIntervalAndUserId".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getActivityHistoryFromIntervalAndUserId">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ActivityWsInterface.getActivityHistoryFromIntervalAndUserIdResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "getActivityHistoryFromIntervalAndUserId".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getActivityHistoryFromIntervalAndUserIdResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ActivityWsInterface.postActivityHistory">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "postActivityHistory".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:postActivityHistory">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ActivityWsInterface.postActivityHistoryResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "postActivityHistory".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:postActivityHistoryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ActivityWsInterface.putActivityHistory">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "putActivityHistory".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:putActivityHistory">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ActivityWsInterface.putActivityHistoryResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "putActivityHistory".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:putActivityHistoryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ActivityWsInterface.deleteActivityHistory">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "deleteActivityHistory".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:deleteActivityHistory">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ActivityWsInterface.deleteActivityHistoryResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "deleteActivityHistory".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:deleteActivityHistoryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ExerciseWsInterface.getExercises">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "getExercises".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getExercises">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="ExerciseWsInterface.getExercisesResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "getExercises".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getExercisesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodHistoryWsInterface.getFoodHistoryFromInterval">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "getFoodHistoryFromInterval".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getFoodHistoryFromInterval">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodHistoryWsInterface.getFoodHistoryFromIntervalResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "getFoodHistoryFromInterval".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getFoodHistoryFromIntervalResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodHistoryWsInterface.getFoodHistoryFromIntervalAndUserId">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "getFoodHistoryFromIntervalAndUserId".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getFoodHistoryFromIntervalAndUserId">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodHistoryWsInterface.getFoodHistoryFromIntervalAndUserIdResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "getFoodHistoryFromIntervalAndUserId".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getFoodHistoryFromIntervalAndUserIdResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodHistoryWsInterface.postFoodHistory">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "postFoodHistory".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:postFoodHistory">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodHistoryWsInterface.postFoodHistoryResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "postFoodHistory".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:postFoodHistoryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodHistoryWsInterface.putFoodHistory">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "putFoodHistory".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:putFoodHistory">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodHistoryWsInterface.putFoodHistoryResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "putFoodHistory".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:putFoodHistoryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodHistoryWsInterface.deleteFoodHistory">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "deleteFoodHistory".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:deleteFoodHistory">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodHistoryWsInterface.deleteFoodHistoryResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "deleteFoodHistory".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:deleteFoodHistoryResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodWsInterface.searchFood">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "searchFood".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:searchFood">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodWsInterface.searchFoodResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "searchFood".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:searchFoodResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodWsInterface.getFoodInfo">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "getFoodInfo".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getFoodInfo">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="FoodWsInterface.getFoodInfoResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "getFoodInfo".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getFoodInfoResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.getUserById">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "getUserById".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getUserById">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.getUserByIdResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "getUserById".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getUserByIdResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.getUserByIdWithoutDailyDetails">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "getUserByIdWithoutDailyDetails".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getUserByIdWithoutDailyDetails">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.getUserByIdWithoutDailyDetailsResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "getUserByIdWithoutDailyDetails".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getUserByIdWithoutDailyDetailsResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.getHealthDataByUserId">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "getHealthDataByUserId".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getHealthDataByUserId">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.getHealthDataByUserIdResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "getHealthDataByUserId".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:getHealthDataByUserIdResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.postUser">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "postUser".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:postUser">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.postUserResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "postUser".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:postUserResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.putUser">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "putUser".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:putUser">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.putUserResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "putUser".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:putUserResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.deleteUser">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "deleteUser".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:deleteUser">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.deleteUserResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "deleteUser".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:deleteUserResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.computeCaloriesCountFromDates">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "computeCaloriesCountFromDates".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:computeCaloriesCountFromDates">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.computeCaloriesCountFromDatesResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "computeCaloriesCountFromDates".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:computeCaloriesCountFromDatesResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.computeUserHealthData">
+    <wsdl:documentation>
+      <![CDATA[request message for operation "computeUserHealthData".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:computeUserHealthData">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="UserWsInterface.computeUserHealthDataResponse">
+    <wsdl:documentation>
+      <![CDATA[response message for operation "computeUserHealthData".]]>
+    </wsdl:documentation>
+    <wsdl:part name="parameters" element="ns1:computeUserHealthDataResponse">
+    </wsdl:part>
+  </wsdl:message>
+
+  <wsdl:portType name="ActivityWsInterface">
+  <wsdl:operation name="getActivityHistoryFromInterval">
+    <wsdl:input message="ns1:ActivityWsInterface.getActivityHistoryFromInterval"/>
+    <wsdl:output message="ns1:ActivityWsInterface.getActivityHistoryFromIntervalResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="getActivityHistoryFromIntervalAndUserId">
+    <wsdl:input message="ns1:ActivityWsInterface.getActivityHistoryFromIntervalAndUserId"/>
+    <wsdl:output message="ns1:ActivityWsInterface.getActivityHistoryFromIntervalAndUserIdResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="postActivityHistory">
+    <wsdl:input message="ns1:ActivityWsInterface.postActivityHistory"/>
+    <wsdl:output message="ns1:ActivityWsInterface.postActivityHistoryResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="putActivityHistory">
+    <wsdl:input message="ns1:ActivityWsInterface.putActivityHistory"/>
+    <wsdl:output message="ns1:ActivityWsInterface.putActivityHistoryResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="deleteActivityHistory">
+    <wsdl:input message="ns1:ActivityWsInterface.deleteActivityHistory"/>
+    <wsdl:output message="ns1:ActivityWsInterface.deleteActivityHistoryResponse"/>
+  </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="ExerciseWsInterface">
+  <wsdl:operation name="getExercises">
+    <wsdl:input message="ns1:ExerciseWsInterface.getExercises"/>
+    <wsdl:output message="ns1:ExerciseWsInterface.getExercisesResponse"/>
+  </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="FoodHistoryWsInterface">
+  <wsdl:operation name="getFoodHistoryFromInterval">
+    <wsdl:input message="ns1:FoodHistoryWsInterface.getFoodHistoryFromInterval"/>
+    <wsdl:output message="ns1:FoodHistoryWsInterface.getFoodHistoryFromIntervalResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="getFoodHistoryFromIntervalAndUserId">
+    <wsdl:input message="ns1:FoodHistoryWsInterface.getFoodHistoryFromIntervalAndUserId"/>
+    <wsdl:output message="ns1:FoodHistoryWsInterface.getFoodHistoryFromIntervalAndUserIdResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="postFoodHistory">
+    <wsdl:input message="ns1:FoodHistoryWsInterface.postFoodHistory"/>
+    <wsdl:output message="ns1:FoodHistoryWsInterface.postFoodHistoryResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="putFoodHistory">
+    <wsdl:input message="ns1:FoodHistoryWsInterface.putFoodHistory"/>
+    <wsdl:output message="ns1:FoodHistoryWsInterface.putFoodHistoryResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="deleteFoodHistory">
+    <wsdl:input message="ns1:FoodHistoryWsInterface.deleteFoodHistory"/>
+    <wsdl:output message="ns1:FoodHistoryWsInterface.deleteFoodHistoryResponse"/>
+  </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="FoodWsInterface">
+  <wsdl:operation name="searchFood">
+    <wsdl:input message="ns1:FoodWsInterface.searchFood"/>
+    <wsdl:output message="ns1:FoodWsInterface.searchFoodResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="getFoodInfo">
+    <wsdl:input message="ns1:FoodWsInterface.getFoodInfo"/>
+    <wsdl:output message="ns1:FoodWsInterface.getFoodInfoResponse"/>
+  </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="UserWsInterface">
+  <wsdl:operation name="getUserById">
+    <wsdl:input message="ns1:UserWsInterface.getUserById"/>
+    <wsdl:output message="ns1:UserWsInterface.getUserByIdResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="getUserByIdWithoutDailyDetails">
+    <wsdl:input message="ns1:UserWsInterface.getUserByIdWithoutDailyDetails"/>
+    <wsdl:output message="ns1:UserWsInterface.getUserByIdWithoutDailyDetailsResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="getHealthDataByUserId">
+    <wsdl:input message="ns1:UserWsInterface.getHealthDataByUserId"/>
+    <wsdl:output message="ns1:UserWsInterface.getHealthDataByUserIdResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="postUser">
+    <wsdl:input message="ns1:UserWsInterface.postUser"/>
+    <wsdl:output message="ns1:UserWsInterface.postUserResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="putUser">
+    <wsdl:input message="ns1:UserWsInterface.putUser"/>
+    <wsdl:output message="ns1:UserWsInterface.putUserResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="deleteUser">
+    <wsdl:input message="ns1:UserWsInterface.deleteUser"/>
+    <wsdl:output message="ns1:UserWsInterface.deleteUserResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="computeCaloriesCountFromDates">
+    <wsdl:input message="ns1:UserWsInterface.computeCaloriesCountFromDates"/>
+    <wsdl:output message="ns1:UserWsInterface.computeCaloriesCountFromDatesResponse"/>
+  </wsdl:operation>
+  <wsdl:operation name="computeUserHealthData">
+    <wsdl:input message="ns1:UserWsInterface.computeUserHealthData"/>
+    <wsdl:output message="ns1:UserWsInterface.computeUserHealthDataResponse"/>
+  </wsdl:operation>
+  </wsdl:portType>
+
+
+  <wsdl:binding name="ActivityWsInterfacePortBinding" type="ns1:ActivityWsInterface">
+    <wsdl:documentation>
+      <![CDATA[SOAP Binding for ActivityWsInterface]]>
+    </wsdl:documentation>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="getActivityHistoryFromInterval">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getActivityHistoryFromIntervalAndUserId">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="postActivityHistory">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="putActivityHistory">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteActivityHistory">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+
+  <wsdl:binding name="ExerciseWsInterfacePortBinding" type="ns1:ExerciseWsInterface">
+    <wsdl:documentation>
+      <![CDATA[SOAP Binding for ExerciseWsInterface]]>
+    </wsdl:documentation>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="getExercises">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+
+  <wsdl:binding name="FoodHistoryWsInterfacePortBinding" type="ns1:FoodHistoryWsInterface">
+    <wsdl:documentation>
+      <![CDATA[SOAP Binding for FoodHistoryWsInterface]]>
+    </wsdl:documentation>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="getFoodHistoryFromInterval">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFoodHistoryFromIntervalAndUserId">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="postFoodHistory">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="putFoodHistory">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteFoodHistory">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+
+  <wsdl:binding name="FoodWsInterfacePortBinding" type="ns1:FoodWsInterface">
+    <wsdl:documentation>
+      <![CDATA[SOAP Binding for FoodWsInterface]]>
+    </wsdl:documentation>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="searchFood">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getFoodInfo">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+
+  <wsdl:binding name="UserWsInterfacePortBinding" type="ns1:UserWsInterface">
+    <wsdl:documentation>
+      <![CDATA[SOAP Binding for UserWsInterface]]>
+    </wsdl:documentation>
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="getUserById">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserByIdWithoutDailyDetails">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getHealthDataByUserId">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="postUser">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="putUser">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteUser">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="computeCaloriesCountFromDates">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="computeUserHealthData">
+      <soap:operation soapAction=""/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+
+  <wsdl:service name="ActivityWsInterfaceService">
+    <wsdl:port name="ActivityWsInterfacePort" binding="ns1:ActivityWsInterfacePortBinding">
+      <soap:address location="http://localhost:8080/ActivityWsInterfaceService"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:service name="ExerciseWsInterfaceService">
+    <wsdl:port name="ExerciseWsInterfacePort" binding="ns1:ExerciseWsInterfacePortBinding">
+      <soap:address location="http://localhost:8080/ExerciseWsInterfaceService"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:service name="FoodHistoryWsInterfaceService">
+    <wsdl:port name="FoodHistoryWsInterfacePort" binding="ns1:FoodHistoryWsInterfacePortBinding">
+      <soap:address location="http://localhost:8080/FoodHistoryWsInterfaceService"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:service name="FoodWsInterfaceService">
+    <wsdl:port name="FoodWsInterfacePort" binding="ns1:FoodWsInterfacePortBinding">
+      <soap:address location="http://localhost:8080/FoodWsInterfaceService"/>
+    </wsdl:port>
+  </wsdl:service>
+  <wsdl:service name="UserWsInterfaceService">
+    <wsdl:port name="UserWsInterfacePort" binding="ns1:UserWsInterfacePortBinding">
+      <soap:address location="http://localhost:8080/UserWsInterfaceService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
+

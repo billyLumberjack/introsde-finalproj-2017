@@ -1,0 +1,799 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema version="1.0" targetNamespace="http://ws.finalproj.introsde/"
+  xmlns:ns1="http://ws.finalproj.introsde/"
+  
+  xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="ns0.xsd"/>
+
+<xs:element name="computeCaloriesCountFromDates" type="ns1:computeCaloriesCountFromDates"/>
+<xs:complexType name="computeCaloriesCountFromDates">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "computeCaloriesCountFromDates".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg1" type="xs:int" minOccurs="1">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg2" type="xs:int" minOccurs="1">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="computeCaloriesCountFromDatesResponse" type="ns1:computeCaloriesCountFromDatesResponse"/>
+<xs:complexType name="computeCaloriesCountFromDatesResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "computeCaloriesCountFromDates".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="statistics" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="computeUserHealthData" type="ns1:computeUserHealthData"/>
+<xs:complexType name="computeUserHealthData">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "computeUserHealthData".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="user" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="computeUserHealthDataResponse" type="ns1:computeUserHealthDataResponse"/>
+<xs:complexType name="computeUserHealthDataResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "computeUserHealthData".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="user" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="deleteActivityHistory" type="ns1:deleteActivityHistory"/>
+<xs:complexType name="deleteActivityHistory">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "deleteActivityHistory".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="deleteActivityHistoryResponse" type="ns1:deleteActivityHistoryResponse"/>
+<xs:complexType name="deleteActivityHistoryResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "deleteActivityHistory".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="deleteFoodHistory" type="ns1:deleteFoodHistory"/>
+<xs:complexType name="deleteFoodHistory">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "deleteFoodHistory".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="deleteFoodHistoryResponse" type="ns1:deleteFoodHistoryResponse"/>
+<xs:complexType name="deleteFoodHistoryResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "deleteFoodHistory".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="deleteUser" type="ns1:deleteUser"/>
+<xs:complexType name="deleteUser">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "deleteUser".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="deleteUserResponse" type="ns1:deleteUserResponse"/>
+<xs:complexType name="deleteUserResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "deleteUser".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getActivityHistoryFromInterval" type="ns1:getActivityHistoryFromInterval"/>
+<xs:complexType name="getActivityHistoryFromInterval">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "getActivityHistoryFromInterval".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:int" minOccurs="1">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg1" type="xs:int" minOccurs="1">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg2" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getActivityHistoryFromIntervalAndUserId" type="ns1:getActivityHistoryFromIntervalAndUserId"/>
+<xs:complexType name="getActivityHistoryFromIntervalAndUserId">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "getActivityHistoryFromIntervalAndUserId".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:int" minOccurs="1">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg1" type="xs:int" minOccurs="1">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg2" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getActivityHistoryFromIntervalAndUserIdResponse" type="ns1:getActivityHistoryFromIntervalAndUserIdResponse"/>
+<xs:complexType name="getActivityHistoryFromIntervalAndUserIdResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "getActivityHistoryFromIntervalAndUserId".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="activityHistory" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getActivityHistoryFromIntervalResponse" type="ns1:getActivityHistoryFromIntervalResponse"/>
+<xs:complexType name="getActivityHistoryFromIntervalResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "getActivityHistoryFromInterval".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="activityHistory" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getExercises" type="ns1:getExercises"/>
+<xs:complexType name="getExercises">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "getExercises".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getExercisesResponse" type="ns1:getExercisesResponse"/>
+<xs:complexType name="getExercisesResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "getExercises".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="exercises" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getFoodHistoryFromInterval" type="ns1:getFoodHistoryFromInterval"/>
+<xs:complexType name="getFoodHistoryFromInterval">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "getFoodHistoryFromInterval".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:int" minOccurs="1">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg1" type="xs:int" minOccurs="1">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg2" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getFoodHistoryFromIntervalAndUserId" type="ns1:getFoodHistoryFromIntervalAndUserId"/>
+<xs:complexType name="getFoodHistoryFromIntervalAndUserId">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "getFoodHistoryFromIntervalAndUserId".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:int" minOccurs="1">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg1" type="xs:int" minOccurs="1">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg2" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getFoodHistoryFromIntervalAndUserIdResponse" type="ns1:getFoodHistoryFromIntervalAndUserIdResponse"/>
+<xs:complexType name="getFoodHistoryFromIntervalAndUserIdResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "getFoodHistoryFromIntervalAndUserId".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="foodHistory" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getFoodHistoryFromIntervalResponse" type="ns1:getFoodHistoryFromIntervalResponse"/>
+<xs:complexType name="getFoodHistoryFromIntervalResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "getFoodHistoryFromInterval".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="foodHistory" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getFoodInfo" type="ns1:getFoodInfo"/>
+<xs:complexType name="getFoodInfo">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "getFoodInfo".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getFoodInfoResponse" type="ns1:getFoodInfoResponse"/>
+<xs:complexType name="getFoodInfoResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "getFoodInfo".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="adapterFoodDetails" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getHealthDataByUserId" type="ns1:getHealthDataByUserId"/>
+<xs:complexType name="getHealthDataByUserId">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "getHealthDataByUserId".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getHealthDataByUserIdResponse" type="ns1:getHealthDataByUserIdResponse"/>
+<xs:complexType name="getHealthDataByUserIdResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "getHealthDataByUserId".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="healthData" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getUserById" type="ns1:getUserById"/>
+<xs:complexType name="getUserById">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "getUserById".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg1" type="xs:int" minOccurs="1">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg2" type="xs:int" minOccurs="1">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getUserByIdResponse" type="ns1:getUserByIdResponse"/>
+<xs:complexType name="getUserByIdResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "getUserById".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="user" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getUserByIdWithoutDailyDetails" type="ns1:getUserByIdWithoutDailyDetails"/>
+<xs:complexType name="getUserByIdWithoutDailyDetails">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "getUserByIdWithoutDailyDetails".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="getUserByIdWithoutDailyDetailsResponse" type="ns1:getUserByIdWithoutDailyDetailsResponse"/>
+<xs:complexType name="getUserByIdWithoutDailyDetailsResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "getUserByIdWithoutDailyDetails".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="user" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="postActivityHistory" type="ns1:postActivityHistory"/>
+<xs:complexType name="postActivityHistory">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "postActivityHistory".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="activityHistory" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="postActivityHistoryResponse" type="ns1:postActivityHistoryResponse"/>
+<xs:complexType name="postActivityHistoryResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "postActivityHistory".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="activityHistory" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="postFoodHistory" type="ns1:postFoodHistory"/>
+<xs:complexType name="postFoodHistory">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "postFoodHistory".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="foodHistory" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="postFoodHistoryResponse" type="ns1:postFoodHistoryResponse"/>
+<xs:complexType name="postFoodHistoryResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "postFoodHistory".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="foodHistory" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="postUser" type="ns1:postUser"/>
+<xs:complexType name="postUser">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "postUser".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="user" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="postUserResponse" type="ns1:postUserResponse"/>
+<xs:complexType name="postUserResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "postUser".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="user" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="putActivityHistory" type="ns1:putActivityHistory"/>
+<xs:complexType name="putActivityHistory">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "putActivityHistory".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg1" type="activityHistory" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="putActivityHistoryResponse" type="ns1:putActivityHistoryResponse"/>
+<xs:complexType name="putActivityHistoryResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "putActivityHistory".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="activityHistory" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="putFoodHistory" type="ns1:putFoodHistory"/>
+<xs:complexType name="putFoodHistory">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "putFoodHistory".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg1" type="foodHistory" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="putFoodHistoryResponse" type="ns1:putFoodHistoryResponse"/>
+<xs:complexType name="putFoodHistoryResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "putFoodHistory".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="foodHistory" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="putUser" type="ns1:putUser"/>
+<xs:complexType name="putUser">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "putUser".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+    <xs:element name="arg1" type="user" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="putUserResponse" type="ns1:putUserResponse"/>
+<xs:complexType name="putUserResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "putUser".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="user" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="searchFood" type="ns1:searchFood"/>
+<xs:complexType name="searchFood">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit request wrapper for operation "searchFood".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="arg0" type="xs:string" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+<xs:element name="searchFoodResponse" type="ns1:searchFoodResponse"/>
+<xs:complexType name="searchFoodResponse">
+  <xs:annotation>
+    <xs:documentation>
+      <![CDATA[doc/lit response wrapper for operation "searchFood".]]>
+    </xs:documentation>
+  </xs:annotation>
+  <xs:sequence>
+    <xs:element name="return" type="adapterFoods" minOccurs="0">
+      <xs:annotation>
+        <xs:documentation>
+          <![CDATA[]]>
+        </xs:documentation>
+      </xs:annotation>
+    </xs:element>
+  </xs:sequence>
+</xs:complexType>
+</xs:schema>
