@@ -7,6 +7,7 @@ import javax.ws.rs.core.Response;
 import introsde.finalproj.client.BlClient;
 import introsde.finalproj.client.SsClient;
 import introsde.finalproj.model.HealthData;
+import introsde.finalproj.model.Statistics;
 import introsde.finalproj.model.User;
 
 @WebService(endpointInterface = "introsde.finalproj.ws.UserWsInterface")
@@ -100,7 +101,7 @@ public class UserWsImpl implements UserWsInterface{
 		
 	}
 
-	public String computeCaloriesCountFromDates(String id, int init, int end) {
+	public Statistics computeCaloriesCountFromDates(String id, int init, int end) {
 		if(init == 0 && end == 0)
 		{
 			init = -1;

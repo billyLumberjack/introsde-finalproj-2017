@@ -6,6 +6,7 @@ import java.util.Properties;
 
 import javax.ws.rs.WebApplicationException;
 import introsde.finalproj.client.MyClient;
+import introsde.finalproj.model.Statistics;
 import introsde.finalproj.model.User;
 
 public class BlClient extends MyClient{
@@ -43,9 +44,9 @@ public class BlClient extends MyClient{
 		return finalMethod(url, HttpMethods.POST, u).getEntity(User.class);	
 	}
 	
-	public  String computeCaloriesCountFromDates(String id, int init, int end){
+	public  Statistics computeCaloriesCountFromDates(String id, int init, int end){
 		String url = ENDPOINT + "/user/"+id+"/calories-count?from="+init+"&to=" + end;
-		return finalMethod(url, HttpMethods.GET).getEntity(String.class);	
+		return finalMethod(url, HttpMethods.GET).getEntity(Statistics.class);	
 	}
 	//ciccio
 	public  String recommendActivities(){

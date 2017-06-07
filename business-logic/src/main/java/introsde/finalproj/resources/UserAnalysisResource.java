@@ -30,8 +30,8 @@ public class UserAnalysisResource {
 
     @GET
     @Path("{userId}/calories-count")
-    @Produces({MediaType.APPLICATION_JSON })
-    public String computeCaloriesCountFromDates(@PathParam("userId") String id,
+    @Produces({MediaType.TEXT_XML,  MediaType.APPLICATION_JSON ,  MediaType.APPLICATION_XML })
+    public Statistics computeCaloriesCountFromDates(@PathParam("userId") String id,
     		@DefaultValue("-1") @QueryParam("from") int init,
     		@DefaultValue("-1") @QueryParam("to") int end
     		){
@@ -59,10 +59,12 @@ public class UserAnalysisResource {
 	    			.add("difference", introdotte - spese)
 	    			.build();
 	    	
+	    	Statistics s = new Statistics();
+	    	s.setDifference(introdotte - spese);
+	    	s.setIntroduced(introdotte);
+	    	s.setSpent(spese);
 	    	
-	                	    	
-	    	
-	    	return o.toString();
+	    	return s;
     	}
     	else
     		return null;

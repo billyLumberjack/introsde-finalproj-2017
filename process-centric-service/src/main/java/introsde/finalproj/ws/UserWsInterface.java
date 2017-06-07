@@ -9,6 +9,7 @@ import javax.jws.soap.SOAPBinding.Use;
 import javax.ws.rs.core.Response;
 
 import introsde.finalproj.model.HealthData;
+import introsde.finalproj.model.Statistics;
 import introsde.finalproj.model.User;
 
 @WebService
@@ -21,7 +22,7 @@ public interface UserWsInterface {
 	public User postUser(User u);
 	public User putUser(String id, User u);
 	public void deleteUser(String id);
-	public String computeCaloriesCountFromDates(String id, int init, int end);
+	public Statistics computeCaloriesCountFromDates(String id, int init, int end);
 	public User computeUserHealthData(User u);
 
 }

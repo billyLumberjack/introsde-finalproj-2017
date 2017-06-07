@@ -13,10 +13,12 @@ import javax.ws.rs.QueryParam;
 import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import javax.xml.bind.annotation.XmlRootElement;
 
 import introsde.finalproj.client.BlClient;
 import introsde.finalproj.client.SsClient;
 import introsde.finalproj.model.HealthData;
+import introsde.finalproj.model.Statistics;
 import introsde.finalproj.model.User;
 
 @Path("/user")
@@ -160,7 +162,7 @@ public class UserResource {
 			){
 		try{
 
-			String data = blClient.computeCaloriesCountFromDates(id, init, end);
+			Statistics data = blClient.computeCaloriesCountFromDates(id, init, end);
 			
 			System.out.println(data);
 			

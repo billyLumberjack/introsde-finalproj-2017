@@ -63,7 +63,7 @@ public class DlClient extends MyClient{
 	}
 
 	public ActivityHistory putActivityHistory(String id, ActivityHistory payload) throws WebApplicationException{
-		String url = ENDPOINT + "/activity-history";
+		String url = ENDPOINT + "/activity-history/" + id;
 		return finalMethod(url, HttpMethods.PUT, payload).getEntity(ActivityHistory.class);	
 	}
 
